@@ -1,0 +1,6 @@
+# Generated site and local tooling
+site/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

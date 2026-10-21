@@ -1,0 +1,42 @@
+/* 千手氏歴史アーカイブ：仕様書 第3.1改訂版の固定パレット */
+:root {
+  --archive-red: #8E1F24;
+  --archive-gold: #C59B27;
+  --archive-gold-text: #77530B;
+  --archive-paper: #F9F8F5;
+  --archive-ink: #2B2B2B;
+}
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #8E1F24;
+  --md-primary-fg-color--light: #ad4145;
+  --md-primary-fg-color--dark: #691519;
+  --md-accent-fg-color: #8E1F24;
+  --md-default-bg-color: #F9F8F5;
+  --md-default-fg-color: #2B2B2B;
+}
+body { font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", system-ui, sans-serif; }
+.md-typeset h1 { font-weight: 750; letter-spacing: .04em; }
+.md-typeset h2 { border-left: 4px solid var(--archive-red); padding-left: .7em; letter-spacing: .025em; }
+.md-typeset a { text-underline-offset: .17em; }
+.md-typeset a:focus-visible { outline: 3px solid var(--archive-gold); outline-offset: 3px; }
+.archive-status { display: inline-block; margin: .2rem 0 1rem; padding: .35rem .75rem; border: 1px solid #c9ab6c; border-radius: 3rem; color: var(--archive-gold-text); font-size: .72rem; font-weight: 750; background: #fffaf0; }
+.archive-hero { border-top: 3px solid var(--archive-red); border-bottom: 1px solid #dbcaa7; padding: 1.65rem 1.45rem; margin: .3rem 0 2rem; background: linear-gradient(110deg, #fff 0%, #f9f5ea 100%); color: var(--archive-ink); }
+.archive-hero p { margin: .65rem 0; }
+.archive-eyebrow { color: var(--archive-gold-text); font: 600 .67rem/1.5 Georgia, serif; letter-spacing: .22em; }
+.archive-hero .archive-lede { font-family: "Noto Serif JP", "Yu Mincho", serif; font-size: clamp(1.25rem, 2.6vw, 1.85rem); font-weight: 700; letter-spacing: .05em; color: var(--archive-red); margin: .6rem 0 1rem; }
+.archive-card-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .85rem; margin: 1.25rem 0 2rem; }
+.archive-card { display: flex; flex-direction: column; gap: .6rem; border: 1px solid #ded6c8; border-top: 3px solid #bcb1a1; border-radius: .6rem; padding: 1.2rem 1.15rem; background: #fff; text-decoration: none !important; color: var(--archive-ink) !important; min-height: 12rem; transition: border-color .15s ease, box-shadow .15s ease; }
+.archive-card:hover, .archive-card:focus-visible { border-color: var(--archive-red); box-shadow: 0 5px 18px rgba(43,43,43,.09); }
+.archive-card strong { font-size: 1.03rem; font-weight: 750; color: var(--archive-ink); }
+.archive-card span:not(.archive-card-kicker):not(.archive-card-arrow) { font-size: .82rem; line-height: 1.8; }
+.archive-card-kicker { color: var(--archive-gold-text); font-size: .7rem; font-weight: 750; letter-spacing: .05em; }
+.archive-card-arrow { color: var(--archive-red); font-weight: 700; font-size: .75rem; margin-top: auto; }
+.archive-feature { border-top-color: var(--archive-red); background: #fffdf9; }
+.archive-note { padding: 1rem 1.15rem; border-left: 3px solid var(--archive-gold); background: #f3eee3; color: #43382c; margin: 1rem 0; }
+.archive-note p { margin: .35rem 0 0; }
+@media (max-width: 720px) {
+  .archive-card-grid { grid-template-columns: 1fr; gap: .65rem; }
+  .archive-card { min-height: unset; padding: 1rem; }
+  .archive-hero { padding: 1.15rem .95rem; }
+}
+@media (prefers-reduced-motion: reduce) { .archive-card { transition: none; } }

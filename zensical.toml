@@ -1,0 +1,25 @@
+[project]
+site_name = "千手氏歴史アーカイブ"
+site_url = "https://senju-archive.github.io/"
+site_description = "千手氏に関わる史料・人物・系統を、歴史の流れの中で読み解くデジタルアーカイブ"
+docs_dir = "docs"
+site_dir = "site"
+extra_css = ["assets/css/extra.css"]
+nav = [
+  { "ホーム" = "index.md" },
+  { "並列年表" = "timeline/index.md" },
+  { "系統" = "lineages/index.md" },
+  { "人物" = "persons/index.md" },
+  { "史料" = "sources/index.md" },
+  { "史跡" = "sites/index.md" },
+  { "このサイトについて" = "about/index.md" },
+]
+
+[project.theme]
+features = ["navigation.tabs", "navigation.sections", "navigation.path", "search.highlight"]
+font = false
+
+[project.theme.palette]
+scheme = "default"
+primary = "custom"
+accent = "red"
