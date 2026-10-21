@@ -6,7 +6,6 @@ DOCは **一つの文献・史料そのもの** を説明するページです�
 
 <div class="entry-facts" aria-label="文献解題の書誌情報">
  <dl>
-  <div><dt>史料ID</dt><dd>DOCの正式IDがここに入る</dd></div>
   <div><dt>正式書名・別称</dt><dd>確定した書誌表記を掲載</dd></div>
   <div><dt>著者・編纂者</dt><dd>確認できる範囲で記載</dd></div>
   <div><dt>成立・刊行</dt><dd>成立年代と刊行年を区別</dd></div>

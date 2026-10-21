@@ -6,7 +6,6 @@ SENJUは、文献中の特定の記載や日付条を扱うページです。**�
 
 <div class="entry-facts" aria-label="個別史料記録の基本情報">
  <dl>
-  <div><dt>記録ID</dt><dd>SENJUの正式IDを表示</dd></div>
   <div><dt>親文献（DOC）</dt><dd><a href="../doc/">DOC表示見本へ →</a></dd></div>
   <div><dt>該当箇所</dt><dd>巻・頁・丁・コマ・日付条など</dd></div>
   <div><dt>時代・対象</dt><dd>記述の対象年代・人物・事件</dd></div>
