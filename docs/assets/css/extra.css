@@ -64,3 +64,26 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
   .tl-row > div + div { border-left: none; border-top: 1px solid #eee8df; }
   .tl-mobile-label { display: block; font-weight: 700; font-size: .77rem; color: var(--archive-red); }
 }
+
+/* 人物・DOC・SENJU表示見本：情報配置のみ。装飾確定前の構造的CSS */
+.entry-facts { margin: 1rem 0 2rem; border-block: 1px solid #d4ccc1; padding: .65rem 0; }
+.entry-facts dl { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 0 1.25rem; margin: 0; }
+.entry-facts dl > div { border-bottom: 1px solid #e7e1d9; padding: .6rem 0 .7rem; min-width: 0; overflow-wrap: anywhere; }
+.entry-facts dt { font-size: .7rem; font-weight: 750; color: #6a5540; margin-bottom: .26rem; }
+.entry-facts dd { margin: 0; font-size: .85rem; line-height: 1.6; }
+.entry-sequence { display: grid; gap: .4rem; padding: .3rem 0; }
+.entry-sequence > div { display: grid; grid-template-columns: minmax(7rem, .65fr) minmax(0, 2fr); gap: 1rem; border-bottom: 1px solid #e7e1d9; padding: .65rem .5rem; }
+.entry-sequence strong { color: #46352a; font-size: .8rem; }
+.entry-sequence span { font-size: .84rem; }
+.entry-related { display: flex; flex-wrap: wrap; gap: .5rem; margin: .85rem 0 1.5rem; }
+.entry-related a { display: block; padding: .6rem .75rem; border: 1px solid #d4ccc1; border-radius: .25rem; font-size: .82rem; text-decoration: none; background: #fff; }
+.source-text-stack { display: grid; gap: .75rem; margin: 1rem 0 1.75rem; }
+.source-text-stack section { padding: .65rem 1rem; border-left: 3px solid #c8bca8; background: #fff; }
+.source-text-stack h3 { font-size: .9rem; margin: .3rem 0 .5rem; }
+.source-text-stack p { font-size: .85rem; margin: .3rem 0; }
+@media (max-width: 750px) {
+  .entry-facts dl { grid-template-columns: minmax(0,1fr); }
+  .entry-sequence > div { display: flex; flex-direction: column; gap: .2rem; }
+  .entry-related { flex-direction: column; }
+  .entry-related a { width: 100%; }
+}
