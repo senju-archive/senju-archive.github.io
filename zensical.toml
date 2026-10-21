@@ -7,6 +7,7 @@ site_dir = "site"
 extra_css = ["assets/css/extra.css"]
 nav = [
   { "ホーム" = "index.md" },
+  { "千手氏とは" = "senju/index.md" },
   { "並列年表" = "timeline/index.md" },
   { "系統" = "lineages/index.md" },
   { "人物" = "persons/index.md" },
