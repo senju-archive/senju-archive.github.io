@@ -12,7 +12,11 @@ nav = [
   { "人物" = "persons/index.md" },
   { "史料" = "sources/index.md" },
   { "史跡" = "sites/index.md" },
+  { "初めての方へ" = "guides/reading-guide.md" },
+  { "関連機関・調査リンク" = "links/index.md" },
+  { "編纂方針" = "guides/editorial-policy.md" },
   { "このサイトについて" = "about/index.md" },
+  { "お問い合わせ" = "contact.md" },
 ]
 
 [project.theme]
