@@ -16,7 +16,7 @@ nav = [
 ]
 
 [project.theme]
-features = ["navigation.tabs", "navigation.sections", "navigation.path", "search.highlight"]
+features = ["navigation.sections", "navigation.path", "search.highlight"]
 font = false
 
 [project.theme.palette]

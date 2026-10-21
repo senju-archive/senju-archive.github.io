@@ -40,3 +40,27 @@ body { font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sy
   .archive-hero { padding: 1.15rem .95rem; }
 }
 @media (prefers-reduced-motion: reduce) { .archive-card { transition: none; } }
+
+/* 第2・第3段階：ナビゲーションと並列年表の構造テスト（装飾は暫定） */
+.md-sidebar--primary { scroll-padding-top: 1rem; }
+/* 年表は比較列のためコンテンツ領域を広げる。左ナビは残す。 */
+body:has(.tl-preview) .md-grid { max-width: 92rem; }
+body:has(.tl-preview) .md-content__inner { max-width: none; }
+.tl-preview { margin: 1rem 0 1.5rem; border: 1px solid #d5d0c8; font-size: .73rem; line-height: 1.65; }
+.tl-row { display: grid; grid-template-columns: minmax(128px, 1.17fr) repeat(4,minmax(116px,1fr)) minmax(128px, .95fr); }
+.tl-row + .tl-row { border-top: 1px solid #d5d0c8; }
+.tl-row > div { display: flex; flex-direction: column; gap: .5rem; padding: .85rem .55rem; min-width: 0; overflow-wrap: anywhere; }
+.tl-row > div + div { border-left: 1px solid #e7e2da; }
+.tl-head { font-weight: 700; background: #eeeae3; color: var(--archive-ink); }
+.tl-time { background: #f7f3eb; }
+.tl-time strong { font-size: .92rem; }
+.tl-mobile-label { display: none; }
+@media (max-width: 1219px) {
+  .tl-preview { border: none; display: flex; flex-direction: column; gap: 1rem; }
+  .tl-head { display: none; }
+  .tl-row:not(.tl-head) { display: flex; flex-direction: column; border: 1px solid #d5d0c8; background: #fff; border-radius: .3rem; overflow: hidden; }
+  .tl-row + .tl-row { border-top: 1px solid #d5d0c8; }
+  .tl-row > div { padding: .8rem 1rem; gap: .35rem; }
+  .tl-row > div + div { border-left: none; border-top: 1px solid #eee8df; }
+  .tl-mobile-label { display: block; font-weight: 700; font-size: .77rem; color: var(--archive-red); }
+}
