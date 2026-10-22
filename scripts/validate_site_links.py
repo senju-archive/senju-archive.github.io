@@ -59,6 +59,9 @@ for slug in ("chikuzen","buzen","takanabe","ogi"):
     assert f'{slug}/' in html("persons/index.html")
 assert "関連人物" in html("persons/index.html")
 homepage=html("index.html")
+assert "archive-home-masthead" in homepage
+assert 'id="archive-home-title"' in homepage
+assert "SENJU HISTORICAL ARCHIVE" in homepage
 assert "archive-hero-mark" in homepage
 assert "senju_archive_logo_master_v1.png" in homepage
 assert "千手氏の平家出自" in html("about/index.html")

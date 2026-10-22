@@ -615,3 +615,130 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
   }
   .md-typeset h1 { overflow-wrap: anywhere; }
 }
+
+
+/* 第4次調整：題字バナーと正式ロゴのあるトップヒーローを再構成。
+   ロゴ画像は一切加工せず、赤／金／生成りの面積と余白で品格を整える。 */
+
+/* トップ専用題字：普通の記事見出しとは別扱い。
+   和紙風は淡い地色のグラデーションのみで、写真・架空の紋章は使用しない。 */
+.md-typeset .archive-home-masthead {
+  position: relative;
+  margin: .5rem 0 1.15rem;
+  padding: clamp(1.1rem, 2.7vw, 1.75rem) clamp(1rem, 3vw, 1.8rem);
+  border: 1px solid #e3d9c7;
+  border-left: 4px solid var(--archive-red);
+  border-radius: .2rem;
+  background: linear-gradient(115deg, #fffdf9 0%, #f8f3e8 100%);
+  overflow: hidden;
+}
+.md-typeset .archive-home-masthead::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 4.25rem;
+  height: 2px;
+  background: var(--archive-gold);
+}
+.md-typeset .archive-home-masthead-en {
+  margin: 0 0 .35rem;
+  color: var(--archive-gold-text);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: .67rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  line-height: 1.6;
+}
+.md-typeset .archive-home-masthead h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #742126;
+  font-family: "Noto Serif JP", "Noto Serif CJK JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-size: clamp(1.65rem, 3.2vw, 2.15rem);
+  font-weight: 750;
+  letter-spacing: .045em;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+/* ロゴは赤い面の中央に安定配置。下段の本文は生成りと墨色で読む。 */
+.archive-hero-mark {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.archive-hero-mark img {
+  box-shadow: 0 0 0 1px rgba(255,255,255,.12);
+}
+.archive-hero-copy {
+  gap: .05rem;
+}
+.archive-hero .archive-lede {
+  font-size: clamp(1.35rem, 2.7vw, 1.82rem);
+  line-height: 1.55;
+  letter-spacing: .045em;
+}
+.archive-hero .archive-hero-description {
+  max-width: 33em;
+  line-height: 1.9;
+}
+.archive-hero-actions {
+  margin-top: .85rem;
+  gap: .6rem;
+}
+.md-typeset .archive-hero-button {
+  min-height: 2.6rem;
+}
+
+@media (max-width: 760px) {
+  .md-typeset .archive-home-masthead {
+    margin-top: .3rem;
+    padding: 1rem 1.1rem 1.1rem;
+  }
+  .md-typeset .archive-home-masthead h1 {
+    font-size: clamp(1.55rem, 6.6vw, 1.9rem);
+    letter-spacing: .025em;
+  }
+  .md-typeset .archive-home-masthead-en { font-size: .62rem; }
+}
+
+@media (max-width: 550px) {
+  /* 前の左寄せロゴと広い赤い空白をやめ、
+     中央の蓮華を左右の短い金色の罫線で挟む。 */
+  .archive-hero-mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(.6rem, 4vw, 1.15rem);
+    padding: .85rem 1.2rem;
+    min-height: 0;
+    width: 100%;
+  }
+  .archive-hero-mark::before,
+  .archive-hero-mark::after {
+    content: "";
+    display: block;
+    flex: 1 1 0;
+    max-width: 4rem;
+    height: 1px;
+    background: #d1ad61;
+  }
+  .archive-hero-mark img {
+    flex: 0 0 auto;
+    width: 104px;
+    max-width: 104px;
+    padding: .32rem;
+  }
+  .archive-hero-copy { padding: 1.15rem 1.15rem 1.25rem; }
+  .archive-hero .archive-lede { font-size: 1.37rem; line-height: 1.55; }
+  .archive-hero-actions { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); width: 100%; gap: .5rem; }
+  .md-typeset .archive-hero-button {
+    justify-content: space-between;
+    gap: .35rem;
+    min-width: 0;
+    padding: .45rem .65rem;
+    font-size: .77rem;
+  }
+}

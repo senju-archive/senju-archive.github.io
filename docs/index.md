@@ -1,4 +1,11 @@
-# 千手氏歴史アーカイブ
+---
+title: 千手氏歴史アーカイブ
+---
+
+<header class="archive-home-masthead">
+  <p class="archive-home-masthead-en">SENJU HISTORICAL ARCHIVE</p>
+  <h1 id="archive-home-title">千手氏歴史アーカイブ</h1>
+</header>
 
 <div class="archive-status" role="status">サイト構築中 ／ 掲載記事を順次整備中</div>
 
@@ -7,7 +14,6 @@
     <img src="assets/images/senju_archive_logo_master_v1.png" alt="千手氏歴史アーカイブの蓮華ロゴ" width="168" height="168" loading="eager" decoding="async">
   </div>
   <div class="archive-hero-copy">
-    <p class="archive-eyebrow">SENJU HISTORICAL ARCHIVE</p>
     <p class="archive-lede">史料からたどる、千手氏の歴史。</p>
     <p class="archive-hero-description">日本史の流れと千手氏の各系統を照らし合わせ、人物・史料・土地のつながりを調べられるデジタルアーカイブを準備しています。</p>
     <div class="archive-hero-actions">
