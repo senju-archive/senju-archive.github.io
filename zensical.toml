@@ -4,6 +4,8 @@ site_url = "https://senju-archive.github.io/"
 site_description = "千手氏に関わる史料・人物・系統を、歴史の流れの中で読み解くデジタルアーカイブ"
 docs_dir = "docs"
 site_dir = "site"
+# 公式サイトのホームへ戻るURL
+
 extra_css = ["assets/css/extra.css"]
 nav = [
   { "ホーム" = "index.md" },
@@ -20,7 +22,11 @@ nav = [
   { "お問い合わせ" = "contact.md" },
 ]
 
+[project.extra]
+homepage = "https://senju-archive.github.io/"
+
 [project.theme]
+custom_dir = "overrides"
 features = ["navigation.sections", "navigation.path", "search.highlight"]
 font = false
 

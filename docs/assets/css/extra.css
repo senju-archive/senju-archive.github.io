@@ -124,3 +124,20 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
 }
 @media (max-width: 750px) { .lineage-grid { grid-template-columns: 1fr; } .lineage-banner { padding: .8rem .9rem; } .lineage-legend { flex-direction: column; } }
 @media (prefers-reduced-motion: reduce) { .md-typeset a.lineage-card { transition: none; } }
+
+
+/* ヘッダー：サイト名・ページ名を押してホームへ戻る。ロゴの既存リンクも維持。 */
+.md-header a.md-header__topic.archive-header-home {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.md-header a.md-header__topic.archive-header-home:hover .md-ellipsis {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.md-header a.md-header__topic.archive-header-home:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+  border-radius: .2rem;
+}
