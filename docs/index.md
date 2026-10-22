@@ -14,7 +14,7 @@ title: 千手氏歴史アーカイブ
     <img src="assets/images/senju_archive_logo_master_v1.png" alt="千手氏歴史アーカイブの蓮華ロゴ" width="168" height="168" loading="eager" decoding="async">
   </div>
   <div class="archive-hero-copy">
-    <p class="archive-lede">史料からたどる、千手氏の歴史。</p>
+    <p class="archive-lede"><span class="archive-lede-line">史料からたどる、</span><span class="archive-lede-line">千手氏の歴史。</span></p>
     <p class="archive-hero-description">日本史の流れと千手氏の各系統を照らし合わせ、人物・史料・土地のつながりを調べられるデジタルアーカイブを準備しています。</p>
     <div class="archive-hero-actions">
       <a class="archive-hero-button" href="senju/">千手氏とは <span aria-hidden="true">→</span></a>

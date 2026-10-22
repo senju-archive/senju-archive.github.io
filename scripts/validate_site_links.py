@@ -63,6 +63,8 @@ assert "archive-home-masthead" in homepage
 assert 'id="archive-home-title"' in homepage
 assert "SENJU HISTORICAL ARCHIVE" in homepage
 assert "archive-hero-mark" in homepage
+assert '<span class="archive-lede-line">史料からたどる、</span>' in homepage
+assert '<span class="archive-lede-line">千手氏の歴史。</span>' in homepage
 assert "senju_archive_logo_master_v1.png" in homepage
 assert "千手氏の平家出自" in html("about/index.html")
 assert (site/"assets/images/senju_archive_logo_master_v1.png").is_file()

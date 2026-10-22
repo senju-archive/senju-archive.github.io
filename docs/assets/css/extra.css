@@ -880,3 +880,25 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
     margin-bottom: .8rem;
   }
 }
+
+/* 第6次調整：短い語だけが次の行へ孤立することを防ぐ。
+   キャッチコピーは小画面で意味のまとまりごとに2行へ分ける。 */
+@media (max-width: 760px) {
+  .md-typeset .archive-hero .archive-lede-line {
+    display: block;
+    white-space: nowrap;
+  }
+}
+/* サイドメニューの題字は小ロゴを残しつつ1行で収まる字幅に。
+   極端な縮小・ロゴ非表示は避け、明朝系の雰囲気を維持する。 */
+.md-nav--primary > .md-nav__title,
+.md-nav--primary > .md-nav__title .md-ellipsis {
+  font-size: clamp(.82rem, 3.15vw, .93rem);
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .md-nav--primary > .md-nav__title .md-nav__button.md-logo {
+    margin-right: .25rem;
+  }
+}
