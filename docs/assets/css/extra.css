@@ -762,3 +762,121 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
     margin-right: .2rem;
   }
 }
+
+/* 第5次調整：サイドメニュー題字の明朝化と、トップのロゴを透過で表示。
+   正式PNGを変更せず、赤帯・白いタイル・枠・影だけを取り除く。 */
+
+/* スマートフォンの引き出しナビ冒頭の「千手氏歴史アーカイブ」。
+   文字サイズやナビの構造は変えず、書体だけ上部ヘッダーと統一。 */
+.md-nav--primary > .md-nav__title,
+.md-nav--primary > .md-nav__title .md-ellipsis,
+.md-nav--primary > .md-nav__title .md-nav__button,
+.md-nav--primary .md-nav__title[for="__drawer"] {
+  font-family: "Noto Serif JP", "Noto Serif CJK JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-weight: 700;
+  letter-spacing: .025em;
+}
+
+/* 生成りを基調に一続きのコンテンツへ。赤い大面積はヘッダーに残す。 */
+.md-typeset .archive-hero {
+  grid-template-columns: minmax(160px, 27%) minmax(0, 1fr);
+  align-items: center;
+  margin: 1.1rem 0 2rem;
+  padding: 0;
+  gap: 0;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid #e2d6be;
+  border-bottom: 1px solid #e2d6be;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+  color: var(--archive-ink);
+}
+
+/* ロゴの下に白い四角が出ていたのはこのimgのCSS背景と枠。 */
+.md-typeset .archive-hero-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 1.5rem .85rem;
+  gap: 0;
+  aspect-ratio: auto;
+  background: transparent;
+  border: 0;
+  border-right: 1px solid #e2d6be;
+  border-radius: 0;
+}
+.md-typeset .archive-hero-mark::before,
+.md-typeset .archive-hero-mark::after {
+  content: none;
+}
+.md-typeset .archive-hero-mark img {
+  display: block;
+  flex: 0 1 auto;
+  width: clamp(110px, 14vw, 158px);
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.md-typeset .archive-hero-copy {
+  padding: 1.35rem clamp(1rem, 2.8vw, 2rem);
+}
+.md-typeset .archive-hero .archive-lede {
+  margin: 0 0 .65rem;
+  line-height: 1.55;
+}
+
+/* スマホ：透過ロゴを金の細い横線で挟み、下に紹介文。 */
+@media (max-width: 760px) {
+  .md-typeset .archive-hero {
+    grid-template-columns: minmax(0,1fr);
+    margin-top: .95rem;
+    padding: 0;
+  }
+  .md-typeset .archive-hero-mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 0;
+    padding: 1rem 1rem .45rem;
+    gap: clamp(.55rem, 4vw, 1.25rem);
+    border: 0;
+    background: transparent;
+  }
+  .md-typeset .archive-hero-mark::before,
+  .md-typeset .archive-hero-mark::after {
+    content: "";
+    display: block;
+    flex: 1 1 0;
+    max-width: 3.8rem;
+    height: 1px;
+    background: #bfa264;
+  }
+  .md-typeset .archive-hero-mark img {
+    flex: 0 0 auto;
+    width: clamp(118px, 30vw, 145px);
+    max-width: min(145px, 38vw);
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  .md-typeset .archive-hero-copy {
+    width: 100%;
+    padding: .75rem .4rem 1.5rem;
+  }
+  .md-typeset .archive-hero .archive-lede {
+    margin-bottom: .8rem;
+  }
+}

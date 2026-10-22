@@ -81,6 +81,12 @@ assert header_nav.find('for="__drawer"') < header_nav.find('data-md-component="h
 assert "千手氏歴史アーカイブのホームへ戻る" in header_nav
 assert "archive-hero-mark" in homepage
 assert "md-header__topic.archive-header-home" in style
+# Responsive article hero preserves the original transparent logo and removes
+# the former red band / white tile; primary drawer heading uses a serif font.
+assert "md-nav--primary > .md-nav__title" in style
+assert "md-typeset .archive-hero-mark img" in style
+assert "background: transparent;" in style
+assert "border-right: 1px solid #e2d6be;" in style
 assert "color: #fff9ed" in style
 assert "padding-left: clamp(16px, 4.5vw, 20px)" in style
 assert "padding-right: clamp(16px, 4.5vw, 20px)" in style
