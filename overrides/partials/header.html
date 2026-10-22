@@ -21,6 +21,7 @@
   IN THE SOFTWARE.
   
   Modification: the header's site title and page title both link to homepage.
+  The menu icon is the first header control; the official logo remains on the homepage and as favicon.
 #}
 {#-
   This file was automatically generated - do not edit
@@ -33,15 +34,6 @@
 {% endif %}
 <header class="{{ class }}" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
-    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
-      <img
-        class="archive-header-logo"
-        src="{{ 'assets/images/senju_archive_logo_master_v1.png' | url }}"
-        alt=""
-        width="48"
-        height="48"
-      >
-    </a>
     <label class="md-header__button md-icon" for="__drawer">
       {% set icon = config.theme.icon.menu or "material/menu" %}
       {% include ".icons/" ~ icon ~ ".svg" %}

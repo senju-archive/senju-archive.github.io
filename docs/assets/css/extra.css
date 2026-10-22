@@ -742,3 +742,23 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
     font-size: .77rem;
   }
 }
+
+/* 上部ヘッダーはメニューを先頭に。ホーム導線は明朝体のサイト名に一本化。
+   正式ロゴはトップ本文・ファビコンに残し、ヘッダーには重複表示しない。 */
+.md-header .md-header__button[for="__drawer"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.3rem;
+  min-height: 2.3rem;
+  margin-left: .15rem;
+  cursor: pointer;
+}
+@media (max-width: 760px) {
+  .md-header .md-header__button[for="__drawer"] {
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+    margin-left: 0;
+    margin-right: .2rem;
+  }
+}

@@ -73,6 +73,13 @@ header=html("index.html")
 style=html("assets/css/extra.css") if (site/"assets/css/extra.css").is_file() else (site/"assets/css/extra.css").read_text("utf-8")
 for label in ("メニューを開く","検索を開く"):
     assert label in header, label
+# Header: first action is the navigation drawer; logo is not duplicated
+# here, while the site-name home link and the homepage emblem remain intact.
+header_nav=header.split('data-md-component="header">', 1)[1].split('</header>', 1)[0]
+assert 'class="md-header__button md-logo"' not in header_nav
+assert header_nav.find('for="__drawer"') < header_nav.find('data-md-component="header-title"')
+assert "千手氏歴史アーカイブのホームへ戻る" in header_nav
+assert "archive-hero-mark" in homepage
 assert "md-header__topic.archive-header-home" in style
 assert "color: #fff9ed" in style
 assert "padding-left: clamp(16px, 4.5vw, 20px)" in style
