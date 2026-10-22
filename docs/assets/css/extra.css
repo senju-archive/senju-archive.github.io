@@ -442,3 +442,115 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
 @media (prefers-reduced-motion: reduce) {
   .md-typeset a.archive-card { transition: none; }
 }
+
+
+/* 第2次調整｜既存SNSヘッダーの「赤・金・生成り・余白」をWeb向けに翻訳。
+   X/Facebook/note画像を埋め込まず、正式ロゴ原本を既存のまま参照する。
+   ロゴの形状、色、画像ファイルは一切変更しない。 */
+.archive-hero {
+  grid-template-columns: minmax(155px, 27%) minmax(0, 1fr);
+  gap: 0;
+  padding: 0;
+  align-items: stretch;
+  background: #fbf7ef;
+  color: var(--archive-ink);
+  border: 1px solid #e5dac9;
+  border-top: 4px solid var(--archive-red);
+  border-bottom: 2px solid var(--archive-gold);
+  border-radius: .25rem;
+  box-shadow: none;
+  overflow: hidden;
+}
+.archive-hero-mark {
+  min-height: 12rem;
+  width: auto;
+  padding: clamp(1rem, 2.1vw, 1.55rem);
+  display: grid;
+  place-items: center;
+  background: var(--archive-red);
+  border: 0;
+  border-radius: 0;
+  aspect-ratio: auto;
+}
+.archive-hero-mark img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 190px;
+  padding: .6rem;
+  border: 1px solid #efdfc5;
+  border-radius: .25rem;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #fffdf7;
+}
+.archive-hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: clamp(1.15rem, 3vw, 2.25rem);
+}
+.archive-hero .archive-eyebrow {
+  color: var(--archive-gold-text);
+  font-size: .69rem;
+  margin: 0 0 .65rem;
+}
+.archive-hero .archive-lede {
+  color: var(--archive-red);
+  font-size: clamp(1.25rem, 2.4vw, 1.78rem);
+  line-height: 1.55;
+  letter-spacing: .045em;
+  margin: 0 0 .7rem;
+}
+.archive-hero .archive-hero-description {
+  color: #403930;
+  font-size: .85rem;
+  line-height: 1.9;
+  margin: .2rem 0 .8rem;
+}
+.archive-hero-actions { margin-top: .8rem; }
+.md-typeset .archive-hero-button {
+  background: var(--archive-red);
+  border-color: var(--archive-red);
+  color: #fff;
+  min-height: 2.45rem;
+}
+.md-typeset .archive-hero-button-quiet {
+  background: #fffdf7;
+  border-color: #b5a89a;
+  color: var(--archive-red);
+}
+.md-typeset .archive-hero-button:is(:hover,:focus-visible) {
+  box-shadow: 0 0 0 2px rgba(142,31,36,.18);
+}
+.md-typeset .archive-hero-button-quiet:is(:hover,:focus-visible) {
+  background: #f8efe5;
+  color: #702027;
+}
+@media (max-width: 760px) {
+  .archive-hero {
+    grid-template-columns: minmax(138px, 30%) minmax(0,1fr);
+    gap: 0;
+    padding: 0;
+  }
+  .archive-hero-mark { min-height: 11rem; padding: .8rem; }
+  .archive-hero-copy { padding: 1rem 1.15rem; }
+  .archive-hero .archive-lede { font-size: 1.22rem; }
+  .archive-hero .archive-hero-description { font-size: .79rem; }
+}
+@media (max-width: 550px) {
+  .archive-hero {
+    grid-template-columns: minmax(0,1fr);
+  }
+  .archive-hero-mark {
+    width: 100%;
+    min-height: 0;
+    padding: .65rem 1rem;
+    place-items: center start;
+  }
+  .archive-hero-mark img { width: 90px; max-width: 90px; padding: .25rem; }
+  .archive-hero-copy { width: 100%; padding: 1.1rem; }
+  .archive-hero .archive-lede { font-size: 1.32rem; }
+  .archive-hero-actions { width: 100%; }
+}
