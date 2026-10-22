@@ -33,7 +33,7 @@
   <a href="../lineages/">系統から探す →</a>
   <a href="../persons/">関係人物から探す →</a>
   <a href="../sources/">史料の所在・記載を探す →</a>
-  <a href="../sites/">史跡・場所から探す →</a>
+  <a href="../encyclopedia/">関連事典（地名・史跡・用語）から探す →</a>
 </div>
 
 ## 事件を読むときの注意

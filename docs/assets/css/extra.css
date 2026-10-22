@@ -172,3 +172,12 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
 .lineage-prefecture {font-size:1.24rem;font-weight:800;line-height:1.4;color:var(--ln-text);}
 .lineage-modern {font-size:.77rem;font-weight:600;color:#504a41;}
 @media (max-width:720px){.period-grid {grid-template-columns:minmax(0,1fr);} .period-entry{display:flex;flex-direction:column;gap:.3rem;}}
+
+/* 関連事典：スマートフォンでも選びやすい分野カード */
+.encyclopedia-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;margin:1rem 0 1.7rem;}
+.md-typeset a.encyclopedia-card {display:flex;flex-direction:column;gap:.55rem;padding:1rem;border:1px solid #ddd5c8;border-left:3px solid var(--archive-red);border-radius:.4rem;background:#fff;color:var(--archive-ink);text-decoration:none;}
+.encyclopedia-card strong {font-size:.95rem;}
+.encyclopedia-card span {font-size:.8rem;line-height:1.7;}
+.encyclopedia-card span:last-child {color:var(--archive-red);font-size:.74rem;font-weight:700;margin-top:auto;}
+.md-typeset a.encyclopedia-card:hover,.md-typeset a.encyclopedia-card:focus-visible {border-color:var(--archive-red);box-shadow:0 4px 14px rgba(43,43,43,.08);}
+@media (max-width:720px){.encyclopedia-grid {grid-template-columns:minmax(0,1fr);}}

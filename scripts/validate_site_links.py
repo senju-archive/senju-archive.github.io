@@ -25,4 +25,12 @@ for slug in ("ancient","heian","kamakura","nanbokucho","muromachi","sengoku","az
     assert years==sorted(years), (slug,years)
     assert "lineages/" in h or "senju/" in h, slug
 assert "periods/" in html("index.html")
-print("Validated period navigation, sorted chronology, prefectures and related tags.")
+assert "encyclopedia/" in html("index.html")
+en=html("encyclopedia/index.html")
+for label in ("地域・地名","城郭・史跡","関連氏族","制度・用語","存寄","嘉麻市"):
+    assert label in en, f"Encyclopedia category missing: {label}"
+assert "../sites/" in en, "Encyclopedia lacks the historic sites index"
+assert "encyclopedia/" in html("sites/index.html")
+assert "関連事典" in html("previews/encyclopedia/index.html")
+assert "関連タグ" in html("tags/index.html")
+print("Validated periods, encyclopedia links, historic sites route, and related tags.")
