@@ -10,6 +10,13 @@
 
 SENJUは、文献中の特定の記載や日付条を扱うページです。**親となるDOCを必ず指定**し、根拠の箇所を第三者が追跡できるようにします。
 
+<nav class="entry-quick-nav" aria-label="記事内の主要項目">
+  <span class="entry-quick-nav-label">このページ</span>
+  <a href="#article-overview">概要</a>
+  <a href="#article-evidence">史料を読む</a>
+  <a href="#article-related">関連記事</a>
+</nav>
+
 <div class="entry-facts" aria-label="個別史料記録の基本情報">
  <dl>
   <div><dt>親文献（DOC）</dt><dd><a href="../doc/">DOC表示見本へ →</a></dd></div>
@@ -20,6 +27,8 @@ SENJUは、文献中の特定の記載や日付条を扱うページです。**�
  </dl>
 </div>
 
+<span class="entry-anchor" id="article-overview"></span>
+
 ## 第1層｜概要
 
 ### どのような記述か
@@ -29,6 +38,8 @@ SENJUは、文献中の特定の記載や日付条を扱うページです。**�
 ### 歴史的な位置づけ
 
 この記述が関わる人物・事件・系統の案内を表示します。
+
+<span class="entry-anchor" id="article-evidence"></span>
 
 ## 第2層｜史料を読む
 
@@ -48,6 +59,8 @@ SENJUは、文献中の特定の記載や日付条を扱うページです。**�
 ### 史料批判と異説
 
 成立事情、異本、他史料との照合、人物の同定、編纂者による補読などを区別します。
+
+<span class="entry-anchor" id="article-related"></span>
 
 ## 関連する人物・事件・系統
 

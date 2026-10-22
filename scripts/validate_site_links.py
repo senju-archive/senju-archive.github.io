@@ -48,6 +48,14 @@ for lineage,years in {
                    for p in (site/"periods").glob("*/index.html")), (lineage,year)
 for preview in ("person","event","doc","senju","encyclopedia"):
     assert 'article-context' in html(f"previews/{preview}/index.html")
+# Five article types: show consistent three-part in-page navigation,
+# with explicit IDs instead of depending on Markdown heading slug rules.
+for template in ("person","event","doc","senju","encyclopedia"):
+    content=html(f"previews/{template}/index.html")
+    assert 'class="entry-quick-nav"' in content, template
+    for anchor in ("article-overview","article-evidence","article-related"):
+        assert f'id="{anchor}"' in content, (template,anchor)
+        assert f'href="#{anchor}"' in content, (template,anchor)
 assert "person-view-lineage" in html("persons/index.html")
 assert "person-view-kana" in html("persons/index.html")
 assert "person-accordion" in html("persons/index.html")

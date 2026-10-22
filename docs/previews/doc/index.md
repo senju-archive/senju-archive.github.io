@@ -10,6 +10,13 @@
 
 DOCは **一つの文献・史料そのもの** を説明するページです。個別の記述（SENJU）とは分けて管理します。史料の種別は表示しますが、種類だけを根拠にした信頼性の格付けは行いません。
 
+<nav class="entry-quick-nav" aria-label="記事内の主要項目">
+  <span class="entry-quick-nav-label">このページ</span>
+  <a href="#article-overview">文献の概要</a>
+  <a href="#article-evidence">照合・論点</a>
+  <a href="#article-related">個別記載</a>
+</nav>
+
 <div class="entry-facts" aria-label="文献解題の書誌情報">
  <dl>
   <div><dt>正式書名・別称</dt><dd>確定した書誌表記を掲載</dd></div>
@@ -22,6 +29,8 @@ DOCは **一つの文献・史料そのもの** を説明するページです�
  </dl>
 </div>
 
+<span class="entry-anchor" id="article-overview"></span>
+
 ## 文献の概要
 
 どのような文献か、史料群の中での位置づけを説明する領域です。
@@ -29,6 +38,8 @@ DOCは **一つの文献・史料そのもの** を説明するページです�
 ## 成立・伝来・諸本
 
 成立経緯、伝来、写本・刊本・異本の関係を整理します。史実の断定と文献に記された主張を区別します。
+
+<span class="entry-anchor" id="article-related"></span>
 
 ## 関連する個別史料記載（SENJU）
 
@@ -38,6 +49,8 @@ DOCは **一つの文献・史料そのもの** を説明するページです�
  <a href="../senju/">個別記載（SENJU）の表示見本 →</a>
  <a href="../../sources/">史料入口へ戻る →</a>
 </div>
+
+<span class="entry-anchor" id="article-evidence"></span>
 
 ## 史料批判・照合上の論点
 

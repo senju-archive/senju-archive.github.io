@@ -10,6 +10,13 @@
 
 人物記事は **1人につき1ページ** とし、概要だけを読む人から、根拠を詳しく調べる人まで同じページを使えるようにします。
 
+<nav class="entry-quick-nav" aria-label="記事内の主要項目">
+  <span class="entry-quick-nav-label">このページ</span>
+  <a href="#article-overview">概要</a>
+  <a href="#article-evidence">事績の根拠</a>
+  <a href="#article-related">関連記事</a>
+</nav>
+
 <div class="entry-facts" aria-label="人物の基本情報">
   <dl>
     <div><dt>記事の対象人物</dt><dd>人物名をここに表示</dd></div>
@@ -20,6 +27,8 @@
     <div><dt>同定・根拠の状況</dt><dd>確認／推定／未確認等の区別</dd></div>
   </dl>
 </div>
+
+<span class="entry-anchor" id="article-overview"></span>
 
 ## 概要
 
@@ -36,6 +45,8 @@
  <div role="listitem"><strong>年代の表示枠</strong><span>別の出来事。年代未詳なら推測値を作らない</span></div>
 </div>
 
+<span class="entry-anchor" id="article-evidence"></span>
+
 ## 事績の根拠をたどる
 
 人物の事績は、可能な限りその記述の近くから、[個別史料記載（SENJU）の見本](../senju/)で示すような根拠の記録へつなぎます。個別記載のページからは親文献（DOC）の所蔵・該当箇所を確認できる構造とし、単に関連記事を並べるだけでなく「どの主張をどの史料が支えるか」が分かるようにします。未公開・未照合の史料にリンクを作りません。
@@ -43,6 +54,8 @@
 ## 異説・同定上の論点
 
 同名異人、表記の違い、人物同定の可能性、相反する伝承などを区別して示す領域です。
+
+<span class="entry-anchor" id="article-related"></span>
 
 ## 関連する資料・記事
 

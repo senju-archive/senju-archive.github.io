@@ -12,6 +12,13 @@
 
 以下は記事の構造を確認するための見本です。**架空の史実、年代、人名、参戦記録、原資料URLは入力していません。**
 
+<nav class="entry-quick-nav" aria-label="記事内の主要項目">
+  <span class="entry-quick-nav-label">このページ</span>
+  <a href="#article-overview">概要</a>
+  <a href="#article-evidence">史料を読む</a>
+  <a href="#article-related">関連記事</a>
+</nav>
+
 <div class="entry-facts" aria-label="事件記事の基本情報の表示見本">
   <dl>
     <div><dt>事件名・別称</dt><dd>確認した標準名称と異表記を表示</dd></div>
@@ -22,6 +29,8 @@
     <div><dt>記述の確認状況</dt><dd>史料記載／伝承／考察／未確認の区別</dd></div>
   </dl>
 </div>
+
+<span class="entry-anchor" id="article-overview"></span>
 
 ## 概要
 
@@ -58,6 +67,8 @@
 
 出来事の結果を整理し、各系統に生じたと考えられる変化を記します。**直接影響／同時代の背景／推定される関係**の違いを文章で説明し、日向高鍋系と肥前小城系などを一つの系統として扱いません。
 
+<span class="entry-anchor" id="article-evidence"></span>
+
 ## 史料を読む
 
 事件に関係する各史料の**記載単位**を、個別史料記録（SENJU）へ案内する領域です。原文・翻刻・現代語訳を当ページに掲載する場合も、どの文献のどの箇所に基づくかを示します。
@@ -69,6 +80,8 @@
 使用底本、著者・成立年代、所蔵・請求記号、巻・頁・丁・画像コマ、原資料への公開リンクなどの追跡可能な情報を掲載する領域です。史料間の相違、後世の軍記・家譜の成立事情、人物同定・原因の異説を検討します。
 
 未確認の資料は、確認済みの史料として扱いません。
+
+<span class="entry-anchor" id="article-related"></span>
 
 ## 関連する人物・系統・史料・史跡
 

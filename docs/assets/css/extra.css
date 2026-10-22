@@ -914,3 +914,195 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
     text-align: left;
   }
 }
+
+
+/* 第8次調整：個別記事の共通デザイン。
+   人物・事件・DOC・SENJU・関連事典の表示見本に適用し、
+   新しい記事で同じクラスを用いて再利用できるようにする。 */
+
+/* 記事の種類と索引の現在地を、小さな案内帯として静かに表示。 */
+.md-typeset .article-context {
+  gap: .4rem .6rem;
+  padding: .6rem .75rem;
+  border-block-color: #ded5ca;
+  background: #f7f3ed;
+  border-radius: .2rem;
+  line-height: 1.65;
+}
+.md-typeset .article-context a {
+  color: #76242a;
+  text-decoration-thickness: .045em;
+}
+.md-typeset .article-context-kind {
+  border-color: #d8cabc;
+  background: #fffdf9;
+  color: #50473e;
+}
+
+/* 目次の代わりではなく、長い記事を冒頭・根拠・関連記事へ導く3つの短いリンク。 */
+.md-typeset .entry-quick-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: .85rem;
+  row-gap: .35rem;
+  margin: 1.25rem 0 1.35rem;
+  padding: .6rem .1rem .75rem;
+  border-bottom: 1px solid var(--archive-divider);
+}
+.entry-quick-nav-label {
+  color: #76604a;
+  font-size: .7rem;
+  font-weight: 750;
+  white-space: nowrap;
+}
+.md-typeset .entry-quick-nav a {
+  color: #76242a;
+  font-size: .78rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #cfb7ad;
+  text-underline-offset: .23em;
+}
+.md-typeset .entry-quick-nav a:is(:hover,:focus-visible) {
+  text-decoration-color: currentColor;
+}
+.entry-anchor { display: block; scroll-margin-top: 5rem; height: 0; }
+
+/* 基本情報は説明文と混ぜず、淡い生成りの書誌・基本事項シートに。 */
+.md-typeset .entry-facts {
+  margin: 1.1rem 0 2rem;
+  padding: .45rem 1.05rem;
+  border: 1px solid #e2d9cd;
+  border-top: 2px solid #bca56d;
+  border-radius: .2rem;
+  background: #fffdf9;
+}
+.md-typeset .entry-facts dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 0 1.5rem;
+  margin: 0;
+}
+.md-typeset .entry-facts dl > div {
+  min-width: 0;
+  border-bottom: 1px solid #eae4da;
+  padding: .75rem .1rem;
+  overflow-wrap: anywhere;
+}
+.md-typeset .entry-facts dt {
+  margin: 0 0 .2rem;
+  color: #77530b;
+  font-size: .71rem;
+  font-weight: 750;
+  line-height: 1.6;
+}
+.md-typeset .entry-facts dd {
+  margin: 0;
+  color: var(--archive-ink);
+  font-size: .83rem;
+  line-height: 1.85;
+}
+
+/* 略年譜・経過。年代や事柄を左、説明を右に置き、連続性だけを薄い線で示す。 */
+.md-typeset .entry-sequence {
+  position: relative;
+  gap: 0;
+  padding: .15rem 0 .15rem .75rem;
+  border-left: 2px solid #d3ba84;
+}
+.md-typeset .entry-sequence > div {
+  position: relative;
+  min-width: 0;
+  gap: .65rem;
+  padding: .7rem .8rem;
+  border-bottom: 1px solid #e6ded2;
+}
+.md-typeset .entry-sequence > div::before {
+  content: "";
+  position: absolute;
+  left: -.99rem;
+  top: 1.17rem;
+  width: .34rem;
+  height: .34rem;
+  border-radius: 50%;
+  background: #8e1f24;
+  border: 2px solid #f9f8f5;
+}
+.entry-sequence strong { color: #5f2527; }
+.entry-sequence span { line-height: 1.85; }
+
+/* 原文・翻刻・読み下し・現代語訳は同格の別枠で表示。
+   枠の色を信頼性の上下関係と誤認させないため全層で統一する。 */
+.md-typeset .source-text-stack {
+  display: grid;
+  gap: .7rem;
+}
+.md-typeset .source-text-stack section {
+  min-width: 0;
+  padding: .85rem 1rem;
+  border: 1px solid #e2d9ce;
+  border-left: 3px solid #bda56e;
+  border-radius: .16rem;
+  background: #fffdfa;
+  overflow-wrap: anywhere;
+}
+.md-typeset .source-text-stack h3 {
+  margin: .05rem 0 .35rem;
+  color: #71262c;
+  font-size: 1rem;
+}
+.md-typeset .source-text-stack p {
+  margin: .2rem 0;
+  font-size: .84rem;
+  line-height: 1.95;
+}
+
+/* 関連記事は大きなボタンにせず、軽い枠付きの一覧リンクで統一。 */
+.md-typeset .entry-related {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: .55rem;
+  margin: .85rem 0 1.7rem;
+}
+.md-typeset .entry-related a {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  min-height: 2.45rem;
+  padding: .6rem .8rem;
+  border: 1px solid #e1d7cb;
+  border-radius: .2rem;
+  color: #742126;
+  background: #fff;
+  font-size: .78rem;
+  line-height: 1.65;
+  text-decoration: none;
+}
+.md-typeset .entry-related a:is(:hover,:focus-visible) {
+  background: #fcf7f2;
+  border-color: var(--archive-red);
+}
+
+/* 関係勢力・複数視点の整理にも共通の薄い線・余白を適用。 */
+.md-typeset .event-factions section {
+  padding: 1rem;
+  border: 1px solid #e1d8cb;
+  border-top: 2px solid #c2ae85;
+  border-radius: .2rem;
+  box-shadow: none;
+  background: #fffdf9;
+}
+
+@media (max-width: 760px) {
+  .md-typeset .article-context { padding: .55rem .7rem; }
+  .md-typeset .entry-quick-nav { gap: .4rem .8rem; margin: 1rem 0; }
+  .entry-quick-nav-label { flex: 0 0 100%; }
+  .md-typeset .entry-facts { padding: .35rem .75rem; }
+  .md-typeset .entry-facts dl { grid-template-columns: minmax(0,1fr); }
+  .md-typeset .entry-facts dl > div { padding: .6rem 0; }
+  .md-typeset .entry-sequence > div { display: flex; flex-direction: column; gap: .15rem; padding: .7rem .6rem; }
+  .md-typeset .entry-related { grid-template-columns: minmax(0,1fr); }
+  .md-typeset .source-text-stack section { padding: .7rem .75rem; }
+  .md-typeset .event-factions { grid-template-columns: minmax(0,1fr); }
+}

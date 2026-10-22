@@ -12,6 +12,13 @@
 
 ## 基本情報
 
+<nav class="entry-quick-nav" aria-label="記事内の主要項目">
+  <span class="entry-quick-nav-label">このページ</span>
+  <a href="#article-overview">概要</a>
+  <a href="#article-evidence">史料と異説</a>
+  <a href="#article-related">関連記事</a>
+</nav>
+
 <div class="entry-facts" aria-label="事典記事の基本項目">
   <dl>
     <div><dt>項目名・分類</dt><dd>地域／史跡／氏族／制度・用語など</dd></div>
@@ -22,6 +29,8 @@
   </dl>
 </div>
 
+<span class="entry-anchor" id="article-overview"></span>
+
 ## 概要
 
 項目の意味と千手氏との関係を、初めて読む人にも分かる言葉で説明します。
@@ -30,9 +39,13 @@
 
 必要に応じて、地域の変遷、史跡の状態、氏族の関係、制度の用例と運用などを記載します。特に藩政用語は、原史料での使用例を先に確認します。
 
+<span class="entry-anchor" id="article-evidence"></span>
+
 ## 史料と異説
 
 典拠の書名、巻・頁・所蔵情報、別の解釈や表記違い、未確認の点を記録します。
+
+<span class="entry-anchor" id="article-related"></span>
 
 ## 関連する記事
 
