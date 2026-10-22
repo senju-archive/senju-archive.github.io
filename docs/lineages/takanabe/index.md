@@ -53,6 +53,7 @@
 <div class="entry-related">
   <a href="../">系統一覧に戻る →</a>
   <a href="../../timeline/">並列年表を見る →</a>
+  <a href="../../events/">事件・合戦から探す →</a>
   <a href="../../senju/">千手氏とは →</a>
   <a href="../../contact/">史料情報・訂正を連絡する →</a>
 </div>

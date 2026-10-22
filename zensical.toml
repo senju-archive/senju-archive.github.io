@@ -13,6 +13,7 @@ nav = [
   { "並列年表" = "timeline/index.md" },
   { "系統" = "lineages/index.md" },
   { "人物" = "persons/index.md" },
+  { "事件・合戦" = "events/index.md" },
   { "史料" = "sources/index.md" },
   { "史跡" = "sites/index.md" },
   { "初めての方へ" = "guides/reading-guide.md" },

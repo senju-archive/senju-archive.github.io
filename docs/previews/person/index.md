@@ -38,6 +38,7 @@
 
 <div class="entry-related">
  <a href="../../timeline/">並列年表から時代を探す →</a>
+ <a href="../event/">事件・合戦記事の表示見本 →</a>
  <a href="../doc/">文献解題（DOC）の表示見本 →</a>
  <a href="../senju/">個別記載（SENJU）の表示見本 →</a>
 </div>

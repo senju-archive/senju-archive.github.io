@@ -32,7 +32,7 @@ PCでは左に年代・日本史を置き、各系統を独立した列で比較
     <div class="ln-buzen" role="cell"><span class="tl-mobile-label">豊前香春千手氏</span><span>史料データ登録前</span></div>
     <div class="ln-takanabe" role="cell"><span class="tl-mobile-label">日向高鍋千手氏</span><span>史料データ登録前</span></div>
     <div class="ln-ogi" role="cell"><span class="tl-mobile-label">肥前小城千手氏</span><span>史料データ登録前</span></div>
-    <div role="cell"><span class="tl-mobile-label">典拠・関連情報</span><span>照合済み記録へのリンクを設置予定</span></div>
+    <div role="cell"><span class="tl-mobile-label">典拠・関連情報</span><span>個別事件・人物・史料へのリンクを設置予定</span><a href="../events/">事件・合戦記事の入口 →</a></div>
   </div>
   <div class="tl-row" role="row">
     <div class="tl-time" role="cell"><span class="tl-mobile-label">年代・日本史</span><strong>表示枠 02</strong><span>時代ごとに独立した比較行を追加</span></div>
@@ -52,4 +52,6 @@ PCでは左に年代・日本史を置き、各系統を独立した列で比較
 
 時代ごとの列数は固定せず、その時期に比較すべき系統に合わせて調整します。現在はPCとスマートフォンの表示を検証する段階です。
 
-[系統から探す](../lineages/) ／ [トップページに戻る](../)
+事件ごとの経過や関係勢力を詳しく知りたい場合は、[事件・合戦の記事索引](../events/)へ進める構成です。現在、事件の個別記事はまだ未公開です。
+
+[事件・合戦から探す](../events/) ／ [系統から探す](../lineages/) ／ [トップページに戻る](../)
