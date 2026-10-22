@@ -58,4 +58,10 @@ for slug in ("chikuzen","buzen","takanabe","ogi"):
     assert "人物一覧" in html(f"persons/{slug}/index.html")
     assert f'{slug}/' in html("persons/index.html")
 assert "関連人物" in html("persons/index.html")
-print("Validated period/lineage context, record anchors, article layouts and related tags.")
+homepage=html("index.html")
+assert "archive-hero-mark" in homepage
+assert "senju_archive_logo_master_v1.png" in homepage
+assert "千手氏の平家出自" in html("about/index.html")
+assert (site/"assets/images/senju_archive_logo_master_v1.png").is_file()
+assert "senju_archive_logo_master_v1.png" in homepage
+print("Validated navigation, emblem asset, design hero and content indexes.")

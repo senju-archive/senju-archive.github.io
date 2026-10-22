@@ -229,3 +229,216 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
 .person-item small{font-size:.72rem;color:#70665b}
 .person-no-items{font-size:.8rem;color:#766a5c}
 .person-subindex{font-size:.8rem;margin:.65rem 0 .15rem}
+
+
+/* 第1次デザイン仕上げ（2026-10-22）
+   正式蓮華ロゴは別ファイル。形状・ピクセルを改変しない。
+   赤はサイトの額縁、金は限定的な装飾。長文は生成りと墨色で読む。 */
+:root {
+  --archive-divider: #e0d9ce;
+  --archive-muted: #625a51;
+  --archive-surface: #fff;
+}
+html { background: var(--archive-paper); scroll-padding-top: 4rem; }
+body { background: var(--archive-paper); }
+.md-typeset {
+  color: var(--archive-ink);
+  line-height: 1.92;
+  font-size: .84rem;
+  overflow-wrap: break-word;
+}
+.md-content__inner { max-width: 51rem; margin-inline: auto; }
+body:has(.tl-preview) .md-content__inner { max-width: none; }
+.md-typeset p, .md-typeset li { line-height: 1.92; }
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  letter-spacing: .025em;
+}
+.md-typeset h1 {
+  font-size: clamp(1.45rem, 2.7vw, 1.8rem);
+  line-height: 1.45;
+  color: var(--archive-ink);
+  margin-bottom: .8rem;
+}
+.md-typeset h2 {
+  font-size: clamp(1.13rem, 2vw, 1.33rem);
+  line-height: 1.5;
+  color: #722326;
+  border-left: 3px solid var(--archive-red);
+  padding-left: .65rem;
+  margin-top: 2.1rem;
+}
+.md-typeset h3 { font-size: 1.02rem; line-height: 1.65; }
+.md-typeset a:not(.archive-card):not(.archive-hero-button) {
+  text-decoration-thickness: .045em;
+  text-underline-offset: .2em;
+}
+.md-typeset :is(a,summary,input,button):focus-visible {
+  outline: 3px solid var(--archive-gold-text);
+  outline-offset: 3px;
+}
+/* 赤いブランドヘッダーには金の細線。ヘッダー上でロゴが沈まないよう生成り面。 */
+.md-header {
+  background: var(--archive-red);
+  box-shadow: 0 2px 0 var(--archive-gold), 0 3px 9px rgba(40,20,20,.11);
+}
+.md-header__inner { min-height: 2.85rem; }
+.md-header .md-header__button.md-logo {
+  display: flex; align-items: center; justify-content: center;
+  width: 2.25rem; height: 2.25rem;
+  padding: .2rem; margin: .19rem .25rem .19rem .1rem;
+  background: #fffdf7;
+  border: 1px solid #e9dac2;
+  border-radius: .4rem;
+  flex: none;
+}
+.md-header .archive-header-logo {
+  display: block;
+  object-fit: contain;
+  width: 100%; height: 100%;
+  max-width: 100%; max-height: 100%;
+}
+.md-header__title { font-size: .87rem; font-weight: 700; letter-spacing: .025em; }
+.md-header a.md-header__topic.archive-header-home:focus-visible,
+.md-header .md-header__button.md-logo:focus-visible {
+  outline: 3px solid #f6d79d; outline-offset: 2px;
+}
+/* ナビ・補助領域は地色から離れすぎない。装飾色は少量のみ。 */
+.md-nav__link--active { color: var(--archive-red); font-weight: 700; }
+.md-sidebar, .md-main { background: transparent; }
+.md-typeset hr { border-color: var(--archive-divider); }
+.md-typeset blockquote { color: #544b43; border-left-color: #bca66b; }
+/* トップ：正式ロゴと象徴色が中心。それ以外は静かなカード。 */
+.archive-hero {
+  display: grid;
+  grid-template-columns: clamp(116px, 19vw, 176px) minmax(0,1fr);
+  align-items: center;
+  gap: clamp(1rem, 2.5vw, 2rem);
+  background: #8E1F24;
+  color: #fff;
+  border: none;
+  border-bottom: 3px solid var(--archive-gold);
+  border-radius: .35rem;
+  padding: clamp(1.1rem, 3vw, 2rem);
+  margin: .65rem 0 2rem;
+}
+.archive-hero-mark {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  aspect-ratio: 1;
+  padding: .65rem;
+  border-radius: .5rem;
+  background: #fffdf7;
+  border: 1px solid #f1e4d2;
+}
+.archive-hero-mark img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; }
+.archive-hero-copy { min-width: 0; }
+.archive-hero .archive-eyebrow {
+  color: #f6e0b0;
+  margin: 0 0 .45rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: .66rem;
+  letter-spacing: .14em;
+}
+.archive-hero .archive-lede {
+  color: #fff;
+  margin: 0 0 .65rem;
+  font-size: clamp(1.25rem, 2.5vw, 1.85rem);
+  font-weight: 750;
+  line-height: 1.65;
+  letter-spacing: .035em;
+}
+.archive-hero .archive-hero-description {
+  color: #fff9f4;
+  margin: .4rem 0 .85rem;
+  font-size: .82rem;
+  line-height: 1.88;
+}
+.archive-hero-actions { display:flex; flex-wrap:wrap; gap:.55rem; margin-top:1rem; }
+.md-typeset .archive-hero-button {
+  display: inline-flex; align-items: center; justify-content: space-between;
+  gap: 1.2rem; min-height: 2.3rem;
+  padding: .4rem .8rem;
+  border-radius: .25rem;
+  border: 1px solid #fff8e8;
+  background: #fffdf7;
+  color: #762128;
+  text-decoration: none;
+  font-size: .79rem; font-weight: 750; line-height: 1.5;
+}
+.md-typeset .archive-hero-button-quiet {
+  border-color: rgba(255,255,255,.68);
+  background: transparent;
+  color: #fff;
+}
+.md-typeset .archive-hero-button:is(:hover,:focus-visible) { box-shadow: 0 0 0 2px rgba(255,255,255,.35); }
+.md-typeset .archive-hero-button-quiet:is(:hover,:focus-visible) { background: rgba(255,255,255,.13); }
+.archive-card-grid { gap: .8rem; margin: 1rem 0 2rem; }
+.md-typeset a.archive-card {
+  min-height: 0;
+  gap: .45rem;
+  padding: 1.05rem 1.1rem;
+  border: 1px solid var(--archive-divider);
+  border-top: 2px solid #c7beb4;
+  border-radius: .35rem;
+  background: var(--archive-surface);
+  box-shadow: none;
+}
+.md-typeset a.archive-card.archive-feature {
+  border-top-color: var(--archive-red);
+  background: #fffdf9;
+}
+.md-typeset a.archive-card:is(:hover,:focus-visible) {
+  border-color: var(--archive-red);
+  box-shadow: 0 2px 12px rgba(43,43,43,.07);
+}
+.archive-card-kicker { letter-spacing: .025em; }
+.archive-card strong { font-family: "Noto Serif JP", "Yu Mincho", serif; font-size: 1.02rem; }
+.archive-card-arrow { margin-top: .2rem; }
+.archive-status { background: #fffdf8; border-color: #d5c5a1; padding: .3rem .7rem; }
+.archive-note { background: #f4f0e7; border-left-width: 3px; border-radius: 0 .25rem .25rem 0; }
+/* 記事・索引の選択部品：四系統の色は維持しつつ情報密度をそろえる */
+.entry-facts { margin-block: 1.25rem 1.75rem; }
+.entry-facts dl { gap: 0 1.2rem; }
+.entry-facts dl > div { padding-block: .6rem .75rem; }
+.entry-facts dd, .source-text-stack p { line-height: 1.88; }
+.entry-related a, .article-shortcut-links a, .md-typeset a.period-neighbor {
+  border-color: var(--archive-divider);
+  background: #fff;
+}
+.entry-related a:is(:hover,:focus-visible),
+.article-shortcut-links a:is(:hover,:focus-visible),
+.md-typeset a.period-neighbor:is(:hover,:focus-visible) { border-color: var(--archive-red); }
+.md-typeset details.person-accordion {
+  border-color: var(--archive-divider);
+  border-radius: .3rem;
+}
+.md-typeset details.person-accordion > summary { min-height: 2.55rem; }
+.md-typeset details.person-accordion > summary:is(:hover,:focus-visible) { background: #faf7f2; }
+.md-typeset details.person-accordion[open] > summary { background: #fcf9f5; }
+.md-typeset .person-tabs label { min-height: 2.4rem; }
+.encyclopedia-card, .period-card { box-shadow: none; }
+.md-footer { background: #742126; }
+@media (max-width: 760px) {
+  .md-typeset { font-size: .83rem; }
+  .md-content__inner { max-width: 100%; }
+  .md-header__inner { min-height: 2.65rem; }
+  .md-header .md-header__button.md-logo { width: 2.05rem; height: 2.05rem; margin-right: .15rem; }
+  .md-header__title { font-size: .82rem; }
+  .archive-hero { grid-template-columns: 105px minmax(0,1fr); padding: 1rem; gap: .9rem; }
+  .archive-hero-mark { padding: .35rem; }
+  .archive-hero .archive-lede { font-size: 1.13rem; line-height: 1.5; }
+  .archive-hero .archive-hero-description { font-size: .77rem; }
+  .archive-hero-actions { gap: .4rem; }
+  .md-typeset .archive-hero-button { min-height: 2.2rem; }
+}
+@media (max-width: 430px) {
+  .archive-hero { grid-template-columns: minmax(0,1fr); justify-items: start; gap: .8rem; }
+  .archive-hero-mark { width: 118px; max-width: 100%; }
+  .archive-hero .archive-lede { font-size: 1.23rem; }
+  .archive-hero-actions { width:100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset a.archive-card { transition: none; }
+}

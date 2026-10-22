@@ -1,11 +1,20 @@
 # 千手氏歴史アーカイブ
 
-<div class="archive-status" role="status">サイト構築中 ／ 表示確認用プレビュー</div>
+<div class="archive-status" role="status">サイト構築中 ／ 掲載記事を順次整備中</div>
 
 <div class="archive-hero">
-  <p class="archive-eyebrow">SENJU HISTORICAL ARCHIVE</p>
-  <p class="archive-lede">史料からたどる、千手氏の歴史。</p>
-  <p>日本史の流れと千手氏の各系統を照らし合わせ、人物・史料・土地のつながりを調べられるデジタルアーカイブを準備しています。</p>
+  <div class="archive-hero-mark">
+    <img src="assets/images/senju_archive_logo_master_v1.png" alt="千手氏歴史アーカイブの蓮華ロゴ" width="168" height="168" loading="eager" decoding="async">
+  </div>
+  <div class="archive-hero-copy">
+    <p class="archive-eyebrow">SENJU HISTORICAL ARCHIVE</p>
+    <p class="archive-lede">史料からたどる、千手氏の歴史。</p>
+    <p class="archive-hero-description">日本史の流れと千手氏の各系統を照らし合わせ、人物・史料・土地のつながりを調べられるデジタルアーカイブを準備しています。</p>
+    <div class="archive-hero-actions">
+      <a class="archive-hero-button" href="senju/">千手氏とは <span aria-hidden="true">→</span></a>
+      <a class="archive-hero-button archive-hero-button-quiet" href="periods/">時代から探す <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
 </div>
 
 ## 千手氏について
@@ -29,7 +38,7 @@
 
 ## 現在の準備状況
 
-このサイトは **PC・スマートフォンでの表示確認を目的とした構築中の試験公開** です。史料本文・人物記事・本格的な年表の公開は、原資料の照合と公開可否の確認を経て段階的に行います。
+このサイトは **PC・スマートフォンでの表示確認を行いながら整備している試験公開サイト** です。史料本文・人物記事・本格的な年表の公開は、原資料の照合と公開可否の確認を経て段階的に行います。
 
 <div class="archive-note"><strong>閲覧される方へ</strong><p>現在のページは機能とデザインの確認用です。掲載予定の項目は、まだ個別史料の存在や公開の確定を示すものではありません。</p></div>
 

@@ -30,6 +30,8 @@ homepage = "https://senju-archive.github.io/"
 
 [project.theme]
 custom_dir = "overrides"
+logo = "assets/images/senju_archive_logo_master_v1.png"
+favicon = "assets/images/senju_archive_logo_master_v1.png"
 features = ["navigation.sections", "navigation.path", "search.highlight"]
 font = false
 
