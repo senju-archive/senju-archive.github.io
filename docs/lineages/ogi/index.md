@@ -1,3 +1,11 @@
+---
+tags:
+  - 系統
+  - 肥前小城千手氏
+  - 小城
+  - 近世
+---
+
 # 肥前小城千手氏
 
 <div class="lineage-banner ln-ogi">
@@ -55,6 +63,7 @@
   <a href="../">系統一覧に戻る →</a>
   <a href="../../timeline/">並列年表を見る →</a>
   <a href="../../events/">事件・合戦から探す →</a>
+  <a href="../../tags/">同じ話題の関連記事をタグから探す →</a>
   <a href="../../senju/">千手氏とは →</a>
   <a href="../../contact/">史料情報・訂正を連絡する →</a>
 </div>

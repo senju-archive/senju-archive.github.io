@@ -16,6 +16,7 @@ nav = [
   { "事件・合戦" = "events/index.md" },
   { "史料" = "sources/index.md" },
   { "史跡" = "sites/index.md" },
+  { "タグから探す" = "tags/index.md" },
   { "初めての方へ" = "guides/reading-guide.md" },
   { "関連機関・調査リンク" = "links/index.md" },
   { "編纂方針" = "guides/editorial-policy.md" },
@@ -35,3 +36,11 @@ font = false
 scheme = "default"
 primary = "custom"
 accent = "red"
+
+# 標準呼称によるタグ分類。未知の表記を誤登録させない。
+[project.plugins.tags]
+enabled = true
+tags = true
+listings = true
+listings_toc = false
+tags_allowed = ["千手氏","系統","中世","近世","筑前千手氏","豊前香春千手氏","日向高鍋千手氏","肥前小城千手氏","嘉麻・夜須","香春・金田","高鍋","小城"]
