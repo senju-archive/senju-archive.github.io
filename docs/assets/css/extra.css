@@ -87,3 +87,40 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
   .entry-related { flex-direction: column; }
   .entry-related a { width: 100%; }
 }
+
+/* 第4段階：仕様書第8.3節に準拠した四系統の識別色。名前と色を必ず併記。 */
+:root {
+  --lineage-chikuzen: #8E1F24;
+  --lineage-buzen: #B8860B;
+  --lineage-buzen-text: #77530B;
+  --lineage-takanabe: #2C4F64;
+  --lineage-ogi: #26593F;
+}
+.ln-chikuzen { --ln-color: var(--lineage-chikuzen); --ln-text: var(--lineage-chikuzen); --ln-tint: #fcf2f2; }
+.ln-buzen { --ln-color: var(--lineage-buzen); --ln-text: var(--lineage-buzen-text); --ln-tint: #fff9ea; }
+.ln-takanabe { --ln-color: var(--lineage-takanabe); --ln-text: var(--lineage-takanabe); --ln-tint: #f0f6f9; }
+.ln-ogi { --ln-color: var(--lineage-ogi); --ln-text: var(--lineage-ogi); --ln-tint: #eff8f2; }
+.lineage-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin: 1.1rem 0 2rem; }
+.md-typeset a.lineage-card { display: flex; flex-direction: column; min-width: 0; padding: 1.15rem; gap: .55rem; text-decoration: none; color: var(--archive-ink); background: #fff; border: 1px solid #ddd6cd; border-top: 5px solid var(--ln-color); border-radius: .4rem; transition: border-color .15s,box-shadow .15s; }
+.md-typeset a.lineage-card:is(:hover,:focus-visible) { border-color: var(--ln-color); box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+.lineage-card-number { font-weight: 650; font-size: .72rem; color: var(--ln-text); }
+.lineage-card-name { color: var(--ln-text); font-size: 1.03rem; line-height: 1.6; }
+.lineage-card-region { font-size: .78rem; font-weight: 700; }
+.lineage-card-summary { font-size: .79rem; line-height: 1.75; flex: 1; }
+.lineage-card-arrow { font-weight: 700; font-size: .75rem; color: var(--ln-text); }
+.lineage-banner { background: var(--ln-tint); border-left: 5px solid var(--ln-color); padding: .9rem 1.1rem; margin: .75rem 0 1.7rem; }
+.lineage-banner p { margin: .3rem 0; line-height: 1.7; }
+.lineage-banner-kicker { color: var(--ln-text); font-weight: 700; font-size: .72rem; }
+.lineage-banner-name { color: var(--ln-text); font-size: 1.14rem; font-weight: 750; }
+.lineage-legend { display: flex; flex-wrap: wrap; gap: .6rem .9rem; margin: 1rem 0 1.25rem; }
+.md-typeset a.lineage-key { display: inline-flex; gap: .4rem; align-items: center; font-weight: 700; font-size: .72rem; color: var(--ln-text); text-decoration: underline; text-underline-offset: .2em; }
+.lineage-dot { width: .82rem; height: .82rem; background: var(--ln-color); border-radius: 2px; flex: none; border: 1px solid rgba(0,0,0,.06); }
+.tl-head > div.ln-chikuzen,.tl-head > div.ln-buzen,.tl-head > div.ln-takanabe,.tl-head > div.ln-ogi { background: var(--ln-tint); box-shadow: inset 0 4px 0 var(--ln-color); color: var(--ln-text); }
+.tl-row:not(.tl-head) > div.ln-chikuzen,.tl-row:not(.tl-head) > div.ln-buzen,.tl-row:not(.tl-head) > div.ln-takanabe,.tl-row:not(.tl-head) > div.ln-ogi { background: var(--ln-tint); }
+.md-typeset .tl-head a { color: var(--ln-text); text-decoration: underline; text-underline-offset: .16em; }
+.tl-row .ln-chikuzen .tl-mobile-label,.tl-row .ln-buzen .tl-mobile-label,.tl-row .ln-takanabe .tl-mobile-label,.tl-row .ln-ogi .tl-mobile-label { color: var(--ln-text); }
+@media (max-width: 1219px) {
+  .tl-row:not(.tl-head) > div.ln-chikuzen,.tl-row:not(.tl-head) > div.ln-buzen,.tl-row:not(.tl-head) > div.ln-takanabe,.tl-row:not(.tl-head) > div.ln-ogi { box-shadow: inset 4px 0 var(--ln-color); padding-left: 1.15rem; }
+}
+@media (max-width: 750px) { .lineage-grid { grid-template-columns: 1fr; } .lineage-banner { padding: .8rem .9rem; } .lineage-legend { flex-direction: column; } }
+@media (prefers-reduced-motion: reduce) { .md-typeset a.lineage-card { transition: none; } }

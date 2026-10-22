@@ -60,7 +60,16 @@
 
 ほかにも、嘉麻に残った一門と伝えられる**嘉麻小野谷桑野氏**、筑前福岡や肥後熊本で確認される千手氏など、関連・派生系統の調査を進めています。
 
-系統別の入口は[系統から探す](../lineages/)をご覧ください。個別の通史・系図・人物記事は順次公開します。
+各系統の概要ページに進めます。
+
+<div class="lineage-legend" aria-label="主要四系統の識別色と関連ページ">
+  <a class="lineage-key ln-chikuzen" href="../lineages/chikuzen/"><span class="lineage-dot" aria-hidden="true"></span>筑前千手氏（嘉麻・夜須）</a>
+  <a class="lineage-key ln-buzen" href="../lineages/buzen/"><span class="lineage-dot" aria-hidden="true"></span>豊前香春千手氏（のち金田定着）</a>
+  <a class="lineage-key ln-takanabe" href="../lineages/takanabe/"><span class="lineage-dot" aria-hidden="true"></span>日向高鍋千手氏</a>
+  <a class="lineage-key ln-ogi" href="../lineages/ogi/"><span class="lineage-dot" aria-hidden="true"></span>肥前小城千手氏</a>
+</div>
+
+詳しい系統一覧は[系統から探す](../lineages/)をご覧ください。人物記事・史料解題は順次公開します。
 
 ## 古い伝承をどう読むか
 

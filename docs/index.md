@@ -18,7 +18,7 @@
 
 <div class="archive-card-grid">
   <a class="archive-card archive-feature" href="timeline/"><span class="archive-card-kicker">01 / 基幹コンテンツ</span><strong>日本史 × 千手氏の並列年表</strong><span>同じ時代の日本史と各系統の動向を並べてたどる。現在、表示方式を準備しています。</span><span class="archive-card-arrow">年表へ →</span></a>
-  <a class="archive-card" href="lineages/"><span class="archive-card-kicker">02 / 系統</span><strong>系統から探す</strong><span>筑前・豊前香春・日向高鍋・肥前小城など、各系統のページを整備します。</span><span class="archive-card-arrow">系統一覧へ →</span></a>
+  <a class="archive-card" href="lineages/"><span class="archive-card-kicker">02 / 系統</span><strong>系統から探す</strong><span>筑前・豊前香春・日向高鍋・肥前小城の四系統について、色分けした一覧から各概要ページへ進めます。</span><span class="archive-card-arrow">系統一覧へ →</span></a>
   <a class="archive-card" href="persons/"><span class="archive-card-kicker">03 / 人物</span><strong>人物から探す</strong><span>人物ごとの事績と関連史料を結び付けます。</span><span class="archive-card-arrow">人物一覧へ →</span></a>
   <a class="archive-card" href="sources/"><span class="archive-card-kicker">04 / 史料</span><strong>史料から探す</strong><span>文献の所在・記載・翻刻・現代語訳・考証を整理します。</span><span class="archive-card-arrow">史料一覧へ →</span></a>
   <a class="archive-card" href="sites/"><span class="archive-card-kicker">05 / 史跡</span><strong>史跡から探す</strong><span>歴史に関わる場所と、関連する史料・人物をたどります。</span><span class="archive-card-arrow">史跡一覧へ →</span></a>
