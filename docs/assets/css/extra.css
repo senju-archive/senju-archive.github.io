@@ -1106,3 +1106,70 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
   .md-typeset .source-text-stack section { padding: .7rem .75rem; }
   .md-typeset .event-factions { grid-template-columns: minmax(0,1fr); }
 }
+
+
+/* 第9次調整｜原文・翻刻の書体を公開仕様書に適合（2026-10-22）。
+   HP記事執筆レギュレーション3.1版7.3／サイト仕様書3.1版8.4：
+   原文・翻刻＝Noto Serif JP系、本文・UI＝Noto Sans JP系、史料ID＝等幅。 */
+
+/* 本文の改行・空白を保持。異体字・欠字・補読の記号を勝手に加工しない。 */
+.md-typeset .source-text-stack .source-reading {
+  display: block;
+  min-width: 0;
+  margin: .6rem 0 .15rem;
+  padding: .85rem 1rem;
+  border-left: 2px solid #bca56f;
+  background: #f9f6f0;
+  color: var(--archive-ink);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  font-size: .89rem;
+  line-height: 1.98;
+}
+
+/* 原文・翻刻は明朝体。文字列だけを対象にし、説明文とラベルは従来書体。 */
+.md-typeset .source-text-stack .source-reading--original,
+.md-typeset .source-text-stack .source-reading--transcription {
+  font-family: "Noto Serif JP", "Noto Serif CJK JP", "Hiragino Mincho ProN",
+               "Yu Mincho", "MS PMincho", serif;
+  font-size: .95rem;
+  font-weight: 400;
+  line-height: 2.08;
+  letter-spacing: .02em;
+}
+
+/* 読み下しと現代語訳は解説文と区別しつつ、通常本文のゴシック系。 */
+.md-typeset .source-text-stack .source-reading--kundoku,
+.md-typeset .source-text-stack .source-reading--translation {
+  font-family: "Noto Sans JP", "Noto Sans CJK JP", "Hiragino Kaku Gothic ProN",
+               "Yu Gothic", system-ui, sans-serif;
+}
+.md-typeset .source-text-stack .source-reading--translation {
+  background: #fffdfa;
+}
+
+/* 文献／個別史料IDは本文の文字組と混同せず等幅で表示。 */
+.md-typeset .source-reference-id,
+.md-typeset .entry-facts code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 760px) {
+  .md-typeset .source-text-stack .source-reading {
+    padding: .7rem .75rem;
+  }
+  .md-typeset .source-text-stack .source-reading--original,
+  .md-typeset .source-text-stack .source-reading--transcription {
+    font-size: .92rem;
+    line-height: 2;
+  }
+}
+@media print {
+  .md-typeset .source-text-stack .source-reading {
+    background: transparent;
+    border-left: 1px solid #888;
+    break-inside: avoid;
+    white-space: pre-wrap;
+  }
+}

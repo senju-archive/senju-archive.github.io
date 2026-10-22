@@ -44,11 +44,29 @@ SENJUは、文献中の特定の記載や日付条を扱うページです。**�
 ## 第2層｜史料を読む
 
 <div class="source-text-stack" aria-label="史料の読み方の各段階">
- <section><h3>原文・画像の所在</h3><p>原資料の該当位置、公開が許された画像・参照先を示す領域です。</p></section>
- <section><h3>翻刻</h3><p>判読結果と、欠字・補入・異体字等を区別して掲載する領域です。</p></section>
- <section><h3>読み下し（ある場合）</h3><p>必要な史料だけに設け、翻刻とは区別します。</p></section>
- <section><h3>現代語訳</h3><p>解釈を含む訳文を、原文・翻刻とは独立して示す領域です。</p></section>
+  <section class="source-original">
+    <h3>原文・画像の所在</h3>
+    <p>原資料の該当位置、公開が許された画像・参照先を示す領域です。</p>
+    <div class="source-reading source-reading--original" lang="ja">［原資料で確認した原文の文字列を掲載する場合の表示枠］</div>
+  </section>
+  <section class="source-transcription">
+    <h3>翻刻</h3>
+    <p>底本をもとに判読し、異体字・欠字・補入・推定補読を区別して示す領域です。</p>
+    <div class="source-reading source-reading--transcription" lang="ja">［採用底本を明記した翻刻を掲載する表示枠。判読不能や補読の記号は凡例に従う］</div>
+  </section>
+  <section class="source-kundoku">
+    <h3>読み下し（ある場合）</h3>
+    <p>必要な史料だけに設け、翻刻とは区別します。</p>
+    <div class="source-reading source-reading--kundoku" lang="ja">［読み下しを作成・検証した場合のみ掲載］</div>
+  </section>
+  <section class="source-translation">
+    <h3>現代語訳</h3>
+    <p>解釈を含む訳文を、原文・翻刻とは独立して示す領域です。</p>
+    <div class="source-reading source-reading--translation" lang="ja">［上の翻刻に対応する範囲の現代語訳を掲載］</div>
+  </section>
 </div>
+
+**表示上の区別：** 原文・翻刻は明朝体、読み下し・現代語訳・解説は通常の本文書体（ゴシック系）です。見本の角括弧内はすべて説明用の文字であり、実際の史料本文・翻刻・訳文ではありません。
 
 ## 第3層｜出典と考証
 

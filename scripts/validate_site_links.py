@@ -56,6 +56,18 @@ for template in ("person","event","doc","senju","encyclopedia"):
     for anchor in ("article-overview","article-evidence","article-related"):
         assert f'id="{anchor}"' in content, (template,anchor)
         assert f'href="#{anchor}"' in content, (template,anchor)
+# Original and transcription are separate serif text blocks. Translation
+# must remain separately identified, rather than inheriting source typography.
+source_preview = html("previews/senju/index.html")
+for class_name in ("source-reading--original","source-reading--transcription",
+                   "source-reading--kundoku","source-reading--translation"):
+    assert f'class="source-reading {class_name}"' in source_preview, class_name
+stylesheet = html("assets/css/extra.css")
+assert '.source-reading--original,' in stylesheet
+assert '.source-reading--transcription {' in stylesheet
+assert 'font-family: "Noto Serif JP"' in stylesheet
+assert 'white-space: pre-wrap;' in stylesheet
+assert '.source-reading--translation {' in stylesheet
 assert "person-view-lineage" in html("persons/index.html")
 assert "person-view-kana" in html("persons/index.html")
 assert "person-accordion" in html("persons/index.html")
