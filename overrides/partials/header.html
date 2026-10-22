@@ -21,7 +21,8 @@
   IN THE SOFTWARE.
   
   Modification: the header's site title and page title both link to homepage.
-  The menu icon is the first header control; the official logo remains on the homepage and as favicon.
+  Wide layouts use the existing official logo as a home link instead of a menu button.
+  Narrow layouts keep the original drawer menu button.
 #}
 {#-
   This file was automatically generated - do not edit
@@ -39,6 +40,10 @@
       {% include ".icons/" ~ icon ~ ".svg" %}
       <span class="md-visually-hidden">メニューを開く</span>
     </label>
+    {# On wide layouts the persistent sidebar replaces the drawer toggle. #}
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" class="md-header__button md-logo archive-desktop-logo" aria-label="千手氏歴史アーカイブのホームへ戻る">
+      <img src="{{ config.theme.logo | url }}" class="archive-header-logo" alt="" width="40" height="40">
+    </a>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" class="md-header__topic archive-header-home" aria-label="千手氏歴史アーカイブのホームへ戻る">
