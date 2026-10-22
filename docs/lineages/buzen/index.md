@@ -3,7 +3,13 @@ tags:
   - 城郭攻防
 ---
 
-# 豊前香春千手氏（のち金田定着）
+# 豊前香春千手氏
+
+<nav class="article-context" aria-label="この記事の分類と位置">
+  <span class="article-context-label">現在地</span>
+  <a href="../">系統・地域から探す</a><span class="article-context-separator" aria-hidden="true">›</span>
+  <strong>福岡県・香春／金田</strong><span class="article-context-kind">系統概説</span>
+</nav>（のち金田定着）
 
 <div class="lineage-banner ln-buzen">
   <p class="lineage-banner-kicker">主要系統 02 ／ 系統別通史・概説</p>
@@ -11,6 +17,15 @@ tags:
   <p><strong>活動時期の目安：</strong>室町初期から近世・近代にかけての展開を調査</p>
   <p><strong>主な地域：</strong>豊前国田川郡香春岳城（鬼ヶ岳城）、西金田村</p>
 </div>
+
+<aside class="article-shortcuts" aria-label="関連年代の暫定索引">
+  <strong>関連する年代の記録へ</strong>
+  <span>年代別の暫定索引です。個別史料の記事や原本照合済みの記録ではありません。</span>
+  <div class="article-shortcut-links">
+  <a href="../../periods/muromachi/#record-1394">1394年・入城伝承 →</a>
+  <a href="../../periods/muromachi/#record-1399">1399年・落城伝承 →</a>
+  </div>
+</aside>
 
 ## 概要
 

@@ -4,7 +4,11 @@
 
 古代の開祖伝承と史料上の位置づけを、**系統を区別せず年代順**に並べています。年代の確定していない事項は末尾に分けています。
 
-[時代の一覧へ](../) ／ [平安時代 →](../heian/)
+<nav class="period-neighbors" aria-label="前後の時代に移動">
+  
+  <a class="period-neighbor period-neighbor-index" href="../"><span>時代の一覧へ</span></a>
+  <a class="period-neighbor" href="../heian/"><span>次の時代 →</span><strong>平安時代</strong></a>
+</nav>
 
 ## 年代順の関連項目
 
@@ -26,7 +30,7 @@
   <a href="../../persons/">人物から探す →</a>
   <a href="../../events/">事件・合戦から探す →</a>
   <a href="../../sources/">史料から探す →</a>
-  <a href="../../sites/">史跡から探す →</a>
+  <a href="../../encyclopedia/">関連事典から探す →</a>
 </div>
 
 [時代一覧へ戻る](../)

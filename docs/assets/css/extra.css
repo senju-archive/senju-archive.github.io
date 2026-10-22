@@ -181,3 +181,24 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
 .encyclopedia-card span:last-child {color:var(--archive-red);font-size:.74rem;font-weight:700;margin-top:auto;}
 .md-typeset a.encyclopedia-card:hover,.md-typeset a.encyclopedia-card:focus-visible {border-color:var(--archive-red);box-shadow:0 4px 14px rgba(43,43,43,.08);}
 @media (max-width:720px){.encyclopedia-grid {grid-template-columns:minmax(0,1fr);}}
+
+/* 史料記事・系統記事：文脈表示、年代別の直接リンク、前後の時代 */
+.article-context {display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .65rem;padding:.65rem .8rem;margin:.6rem 0 1rem;border-top:1px solid #d9d0c5;border-bottom:1px solid #d9d0c5;font-size:.79rem;line-height:1.6;}
+.article-context-label {font-size:.69rem;font-weight:750;color:var(--archive-gold-text);}
+.article-context a {font-weight:700;}
+.article-context strong {font-weight:700;color:var(--archive-ink);}
+.article-context-separator {color:#93887a;}
+.article-context-kind {margin-left:auto;border:1px solid #d8cbbd;padding:.15rem .52rem;border-radius:1rem;font-size:.7rem;color:#5c4934;}
+.article-shortcuts {display:flex;flex-direction:column;gap:.4rem;padding:.85rem 1rem;margin:1rem 0 1.6rem;border:1px solid #e3dcd2;border-radius:.35rem;background:#fff;}
+.article-shortcuts>strong {font-size:.85rem;color:var(--archive-ink);}
+.article-shortcuts>span {font-size:.74rem;color:#5d544b;line-height:1.7;}
+.article-shortcut-links {display:flex;flex-wrap:wrap;gap:.4rem .65rem;margin-top:.2rem;}
+.article-shortcut-links a {font-size:.78rem;padding:.35rem .6rem;border:1px solid #dcd3c9;border-radius:.35rem;text-decoration:none;}
+.article-shortcut-links a:is(:hover,:focus-visible) {border-color:var(--archive-red);}
+.period-neighbors {display:flex;flex-wrap:wrap;gap:.45rem;margin:1rem 0 1.4rem;}
+.md-typeset .period-neighbor {display:flex;flex:1 1 9rem;flex-direction:column;gap:.2rem;padding:.6rem .7rem;border:1px solid #ded6cb;border-radius:.35rem;background:#fff;text-decoration:none;}
+.period-neighbor>span {font-size:.74rem;color:var(--archive-red);font-weight:700;}
+.period-neighbor>strong {font-size:.8rem;color:var(--archive-ink);}
+.md-typeset .period-neighbor-index {flex:0 1 auto;justify-content:center;background:#f6f3ee;}
+.period-entry[id] {scroll-margin-top:5rem;}
+@media(max-width:720px){.article-context-kind {margin-left:0;}.article-shortcuts {padding:.75rem;}.period-neighbors {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));}.md-typeset .period-neighbor {min-width:0;}.md-typeset .period-neighbor-index {grid-column:1/-1;grid-row:2;}}

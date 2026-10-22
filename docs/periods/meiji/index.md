@@ -4,7 +4,11 @@
 
 近代の地域社会と千手氏を、**系統を区別せず年代順**に並べています。年代の確定していない事項は末尾に分けています。
 
-[← 江戸時代](../edo/) ／ [時代の一覧へ](../)
+<nav class="period-neighbors" aria-label="前後の時代に移動">
+  <a class="period-neighbor" href="../edo/"><span>← 前の時代</span><strong>江戸時代</strong></a>
+  <a class="period-neighbor period-neighbor-index" href="../"><span>時代の一覧へ</span></a>
+  
+</nav>
 
 ## 年代順の関連項目
 
@@ -26,7 +30,7 @@
   <a href="../../persons/">人物から探す →</a>
   <a href="../../events/">事件・合戦から探す →</a>
   <a href="../../sources/">史料から探す →</a>
-  <a href="../../sites/">史跡から探す →</a>
+  <a href="../../encyclopedia/">関連事典から探す →</a>
 </div>
 
 [時代一覧へ戻る](../)

@@ -4,13 +4,17 @@
 
 豊前の香春岳城にまつわる記録と伝承を、**系統を区別せず年代順**に並べています。年代の確定していない事項は末尾に分けています。
 
-[← 南北朝時代](../nanbokucho/) ／ [時代の一覧へ](../) ／ [戦国時代 →](../sengoku/)
+<nav class="period-neighbors" aria-label="前後の時代に移動">
+  <a class="period-neighbor" href="../nanbokucho/"><span>← 前の時代</span><strong>南北朝時代</strong></a>
+  <a class="period-neighbor period-neighbor-index" href="../"><span>時代の一覧へ</span></a>
+  <a class="period-neighbor" href="../sengoku/"><span>次の時代 →</span><strong>戦国時代</strong></a>
+</nav>
 
 ## 年代順の関連項目
 
 <div class="period-entries" aria-label="年代順の案内">
-  <div class="period-entry" data-year="1394"><div class="period-date"><strong>1394年（応永元年）</strong></div><div class="period-detail"><strong>千手興房の香春岳城入城を伝える記述</strong><p>城主としての活動については後世軍記・地域史との照合が必要です。</p><a href="../../lineages/buzen/">豊前香春千手氏の概説へ →</a></div></div>
-  <div class="period-entry" data-year="1399"><div class="period-date"><strong>1399年（応永6年）</strong></div><div class="period-detail"><strong>香春岳城落城と金田への移住伝承</strong><p>興房・高房にまつわる落城と移動の話。合戦の経緯と続柄は確定していません。</p><a href="../../lineages/buzen/">豊前香春千手氏の概説へ →</a></div></div>
+  <div class="period-entry" id="record-1394" data-year="1394"><div class="period-date"><strong>1394年（応永元年）</strong></div><div class="period-detail"><strong>千手興房の香春岳城入城を伝える記述</strong><p>城主としての活動については後世軍記・地域史との照合が必要です。</p><a href="../../lineages/buzen/">豊前香春千手氏の概説へ →</a></div></div>
+  <div class="period-entry" id="record-1399" data-year="1399"><div class="period-date"><strong>1399年（応永6年）</strong></div><div class="period-detail"><strong>香春岳城落城と金田への移住伝承</strong><p>興房・高房にまつわる落城と移動の話。合戦の経緯と続柄は確定していません。</p><a href="../../lineages/buzen/">豊前香春千手氏の概説へ →</a></div></div>
 </div>
 
 
@@ -25,7 +29,7 @@
   <a href="../../persons/">人物から探す →</a>
   <a href="../../events/">事件・合戦から探す →</a>
   <a href="../../sources/">史料から探す →</a>
-  <a href="../../sites/">史跡から探す →</a>
+  <a href="../../encyclopedia/">関連事典から探す →</a>
 </div>
 
 [時代一覧へ戻る](../)

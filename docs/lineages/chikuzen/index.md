@@ -7,12 +7,29 @@ tags:
 
 # 筑前千手氏（嘉麻・夜須）
 
+<nav class="article-context" aria-label="この記事の分類と位置">
+  <span class="article-context-label">現在地</span>
+  <a href="../">系統・地域から探す</a><span class="article-context-separator" aria-hidden="true">›</span>
+  <strong>福岡県・嘉麻／夜須</strong><span class="article-context-kind">系統概説</span>
+</nav>
+
 <div class="lineage-banner ln-chikuzen">
   <p class="lineage-banner-kicker">主要系統 01 ／ 系統別通史・概説</p>
   <p class="lineage-banner-name">筑前千手氏（嘉麻・夜須）</p>
   <p><strong>活動時期の目安：</strong>平安末期・鎌倉期から戦国期を中心に調査</p>
   <p><strong>主な地域：</strong>筑前国嘉麻郡千手、夜須郡千手、古処山周辺</p>
 </div>
+
+<aside class="article-shortcuts" aria-label="関連年代の暫定索引">
+  <strong>関連する年代の記録へ</strong>
+  <span>年代別の暫定索引です。個別史料の記事や原本照合済みの記録ではありません。</span>
+  <div class="article-shortcut-links">
+  <a href="../../periods/heian/#record-1185">1185年・初期の記録 →</a>
+  <a href="../../periods/kamakura/#record-1323">1323年・千手兵衛入道 →</a>
+  <a href="../../periods/nanbokucho/#record-1337">1337年・軍事動向 →</a>
+  <a href="../../periods/nanbokucho/#record-1354">1354年・千手城の記録 →</a>
+  </div>
+</aside>
 
 ## 概要
 

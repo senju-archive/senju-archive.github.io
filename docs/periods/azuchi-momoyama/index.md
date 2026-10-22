@@ -4,12 +4,16 @@
 
 九州平定と秋月氏家臣団の動向を、**系統を区別せず年代順**に並べています。年代の確定していない事項は末尾に分けています。
 
-[← 戦国時代](../sengoku/) ／ [時代の一覧へ](../) ／ [江戸時代 →](../edo/)
+<nav class="period-neighbors" aria-label="前後の時代に移動">
+  <a class="period-neighbor" href="../sengoku/"><span>← 前の時代</span><strong>戦国時代</strong></a>
+  <a class="period-neighbor period-neighbor-index" href="../"><span>時代の一覧へ</span></a>
+  <a class="period-neighbor" href="../edo/"><span>次の時代 →</span><strong>江戸時代</strong></a>
+</nav>
 
 ## 年代順の関連項目
 
 <div class="period-entries" aria-label="年代順の案内">
-  <div class="period-entry" data-year="1587"><div class="period-date"><strong>1587年（天正15年）以降</strong></div><div class="period-detail"><strong>九州平定と秋月家臣団の移動</strong><p>移封にともない移ったと伝わる千手氏を検討。日向移住前の所属と後世の呼称を区別します。</p><a href="../../lineages/takanabe/">日向高鍋千手氏の概説へ →</a></div></div>
+  <div class="period-entry" id="record-1587" data-year="1587"><div class="period-date"><strong>1587年（天正15年）以降</strong></div><div class="period-detail"><strong>九州平定と秋月家臣団の移動</strong><p>移封にともない移ったと伝わる千手氏を検討。日向移住前の所属と後世の呼称を区別します。</p><a href="../../lineages/takanabe/">日向高鍋千手氏の概説へ →</a></div></div>
 </div>
 
 
@@ -24,7 +28,7 @@
   <a href="../../persons/">人物から探す →</a>
   <a href="../../events/">事件・合戦から探す →</a>
   <a href="../../sources/">史料から探す →</a>
-  <a href="../../sites/">史跡から探す →</a>
+  <a href="../../encyclopedia/">関連事典から探す →</a>
 </div>
 
 [時代一覧へ戻る](../)

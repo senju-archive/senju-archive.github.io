@@ -4,12 +4,16 @@
 
 原田氏と千手氏の初期をめぐる記録を、**系統を区別せず年代順**に並べています。年代の確定していない事項は末尾に分けています。
 
-[← 古代（飛鳥・奈良時代）](../ancient/) ／ [時代の一覧へ](../) ／ [鎌倉時代 →](../kamakura/)
+<nav class="period-neighbors" aria-label="前後の時代に移動">
+  <a class="period-neighbor" href="../ancient/"><span>← 前の時代</span><strong>古代（飛鳥・奈良時代）</strong></a>
+  <a class="period-neighbor period-neighbor-index" href="../"><span>時代の一覧へ</span></a>
+  <a class="period-neighbor" href="../kamakura/"><span>次の時代 →</span><strong>鎌倉時代</strong></a>
+</nav>
 
 ## 年代順の関連項目
 
 <div class="period-entries" aria-label="年代順の案内">
-  <div class="period-entry" data-year="1185"><div class="period-date"><strong>1185年（元暦2年）</strong></div><div class="period-detail"><strong>原田種直・賀摩兵衛尉に関する記録</strong><p>『吾妻鏡』2月1日条。嘉麻に結び付く名乗りの手がかりですが、千手氏の名が直接書かれた記録ではありません。</p><a href="../../senju/">千手氏とはの概説へ →</a></div></div>
+  <div class="period-entry" id="record-1185" data-year="1185"><div class="period-date"><strong>1185年（元暦2年）</strong></div><div class="period-detail"><strong>原田種直・賀摩兵衛尉に関する記録</strong><p>『吾妻鏡』2月1日条。嘉麻に結び付く名乗りの手がかりですが、千手氏の名が直接書かれた記録ではありません。</p><a href="../../senju/">千手氏とはの概説へ →</a></div></div>
 </div>
 
 
@@ -24,7 +28,7 @@
   <a href="../../persons/">人物から探す →</a>
   <a href="../../events/">事件・合戦から探す →</a>
   <a href="../../sources/">史料から探す →</a>
-  <a href="../../sites/">史跡から探す →</a>
+  <a href="../../encyclopedia/">関連事典から探す →</a>
 </div>
 
 [時代一覧へ戻る](../)

@@ -7,12 +7,28 @@ tags:
 
 # 日向高鍋千手氏
 
+<nav class="article-context" aria-label="この記事の分類と位置">
+  <span class="article-context-label">現在地</span>
+  <a href="../">系統・地域から探す</a><span class="article-context-separator" aria-hidden="true">›</span>
+  <strong>宮崎県・高鍋</strong><span class="article-context-kind">系統概説</span>
+</nav>
+
 <div class="lineage-banner ln-takanabe">
   <p class="lineage-banner-kicker">主要系統 03 ／ 系統別通史・概説</p>
   <p class="lineage-banner-name">日向高鍋千手氏</p>
   <p><strong>活動時期の目安：</strong>戦国末期から江戸・明治期を中心に調査</p>
   <p><strong>主な地域：</strong>筑前の秋月氏家臣団、日向国高鍋</p>
 </div>
+
+<aside class="article-shortcuts" aria-label="関連年代の暫定索引">
+  <strong>関連する年代の記録へ</strong>
+  <span>年代別の暫定索引です。個別史料の記事や原本照合済みの記録ではありません。</span>
+  <div class="article-shortcut-links">
+  <a href="../../periods/azuchi-momoyama/#record-1587">1587年以降・家臣団の移動 →</a>
+  <a href="../../periods/edo/#record-1621">1621年・藩士記録 →</a>
+  <a href="../../periods/edo/#record-1777">1777年・藩校関係 →</a>
+  </div>
+</aside>
 
 ## 概要
 
