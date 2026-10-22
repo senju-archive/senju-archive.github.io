@@ -87,6 +87,9 @@ assert "md-header__topic.archive-header-home" in style
 # the former red band / white tile; primary drawer heading uses a serif font.
 assert "md-nav--primary > .md-nav__title" in style
 assert "md-typeset .archive-hero-mark img" in style
+assert "align-self: center;" in style
+assert "width: max-content;" in style
+assert "text-align: left;" in style
 assert "background: transparent;" in style
 assert "border-right: 1px solid #e2d6be;" in style
 assert "color: #fff9ed" in style

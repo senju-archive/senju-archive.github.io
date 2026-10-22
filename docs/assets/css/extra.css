@@ -902,3 +902,15 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
     margin-right: .25rem;
   }
 }
+
+/* 第7次調整：キャッチコピーは二行とも左揃えにし、文字の塊だけを中央へ。
+   下の説明文やボタンは元どおり左揃えのまま。 */
+@media (max-width: 760px) {
+  .md-typeset .archive-hero .archive-lede {
+    align-self: center;
+    width: max-content;
+    max-width: 100%;
+    margin: 0 auto .8rem;
+    text-align: left;
+  }
+}
