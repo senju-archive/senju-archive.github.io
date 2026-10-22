@@ -202,3 +202,30 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
 .md-typeset .period-neighbor-index {flex:0 1 auto;justify-content:center;background:#f6f3ee;}
 .period-entry[id] {scroll-margin-top:5rem;}
 @media(max-width:720px){.article-context-kind {margin-left:0;}.article-shortcuts {padding:.75rem;}.period-neighbors {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));}.md-typeset .period-neighbor {min-width:0;}.md-typeset .period-neighbor-index {grid-column:1/-1;grid-row:2;}}
+
+
+/* 人物：2方向の横タブとネイティブアコーディオン。外部スクリプト不要。 */
+.person-index{margin:1.15rem 0 1.8rem;position:relative}
+.person-view-radio{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+.person-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem;margin-bottom:1rem}
+.md-typeset .person-tabs label{display:block;text-align:center;padding:.75rem;border:1px solid #d9d2c6;border-bottom:3px solid #d9d2c6;border-radius:.35rem .35rem 0 0;font-weight:700;cursor:pointer;background:#fff}
+#person-view-lineage:checked~.person-tabs label[for="person-view-lineage"],#person-view-kana:checked~.person-tabs label[for="person-view-kana"]{border-bottom-color:var(--archive-red);background:#fff6f4;color:var(--archive-red)}
+#person-view-lineage:focus-visible~.person-tabs label[for="person-view-lineage"],#person-view-kana:focus-visible~.person-tabs label[for="person-view-kana"]{outline:3px solid var(--archive-gold);outline-offset:2px}
+.person-view{display:none}
+#person-view-lineage:checked~.person-view-lineage,#person-view-kana:checked~.person-view-kana{display:block}
+.person-view>p{font-size:.84rem;color:#594f45;line-height:1.8}
+.md-typeset details.person-accordion{margin:.55rem 0;border:1px solid #ddd5ca;border-radius:.35rem;background:#fff;box-shadow:none}
+.md-typeset details.person-accordion>summary{padding:.78rem .95rem;display:flex;align-items:center;gap:.7rem;cursor:pointer;list-style:none}
+.md-typeset details.person-accordion>summary::-webkit-details-marker{display:none}
+.md-typeset details.person-accordion>summary:before{content:"›";font-size:1.25rem;color:var(--archive-red);font-weight:750;display:block;width:.7rem}
+.md-typeset details.person-accordion[open]>summary:before{transform:rotate(90deg)}
+.person-accordion>summary strong{flex:1;font-size:.87rem;line-height:1.55}
+.person-accordion>summary span{font-size:.74rem;color:#6b6258;white-space:nowrap}
+.person-accordion-body{border-top:1px solid #e7dfd5;padding:.45rem .95rem .95rem}
+.md-typeset .person-items{list-style:none;margin:.3rem 0;padding:0}
+.md-typeset .person-item{margin:0;display:flex;flex-direction:column;gap:.3rem;padding:.7rem .15rem;border-bottom:1px solid #eee6dc;font-size:.78rem}
+.person-item strong{color:var(--archive-ink);font-size:.91rem}
+.person-item>span{line-height:1.7;color:#574b42}
+.person-item small{font-size:.72rem;color:#70665b}
+.person-no-items{font-size:.8rem;color:#766a5c}
+.person-subindex{font-size:.8rem;margin:.65rem 0 .15rem}

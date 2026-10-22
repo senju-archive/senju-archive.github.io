@@ -3,13 +3,13 @@ tags:
   - 城郭攻防
 ---
 
-# 豊前香春千手氏
+# 豊前香春千手氏（のち金田定着）
 
 <nav class="article-context" aria-label="この記事の分類と位置">
   <span class="article-context-label">現在地</span>
   <a href="../">系統・地域から探す</a><span class="article-context-separator" aria-hidden="true">›</span>
   <strong>福岡県・香春／金田</strong><span class="article-context-kind">系統概説</span>
-</nav>（のち金田定着）
+</nav>
 
 <div class="lineage-banner ln-buzen">
   <p class="lineage-banner-kicker">主要系統 02 ／ 系統別通史・概説</p>
@@ -44,6 +44,8 @@ tags:
 ### 西金田への定着と近世以降
 
 福岡県田川地方の郷土史には、高房の後裔が西金田に定着したとする記述があります。金田の千手家に伝わったとされる**鎧兜や興房の肖像画**も、家の由緒と伝来を知る手がかりです。近世の在地社会や近代の活動についても、個別の史料を整理していきます。
+
+[この系統の人物一覧を見る](../../persons/buzen/)
 
 ## 関連人物・拠点
 

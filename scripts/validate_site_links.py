@@ -48,6 +48,14 @@ for lineage,years in {
                    for p in (site/"periods").glob("*/index.html")), (lineage,year)
 for preview in ("person","event","doc","senju","encyclopedia"):
     assert 'article-context' in html(f"previews/{preview}/index.html")
+assert "person-view-lineage" in html("persons/index.html")
+assert "person-view-kana" in html("persons/index.html")
+assert "person-accordion" in html("persons/index.html")
 assert "千手氏の人物" in html("persons/index.html")
+assert "読み未確定" in html("persons/index.html")
+for slug in ("chikuzen","buzen","takanabe","ogi"):
+    assert f"persons/{slug}/" in html(f"lineages/{slug}/index.html")
+    assert "人物一覧" in html(f"persons/{slug}/index.html")
+    assert f'{slug}/' in html("persons/index.html")
 assert "関連人物" in html("persons/index.html")
 print("Validated period/lineage context, record anchors, article layouts and related tags.")

@@ -23,6 +23,8 @@ jobs:
           python-version: '3.13'
       - name: Install the pinned site generator
         run: python -m pip install -r requirements.txt
+      - name: Generate person index pages
+        run: python scripts/build_person_index.py
       - name: Build static website
         run: zensical build --clean
       - name: Verify tag index and cross-page links
