@@ -1173,3 +1173,17 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
     white-space: pre-wrap;
   }
 }
+
+/* ヘッダー：サイドバーが常時表示される幅のみ三本線を正式ロゴに置換。
+   モバイルと狭いウィンドウはドロワー操作が必要なため従来どおり。 */
+.md-header a.md-header__button.md-logo.archive-desktop-logo {
+  display: none;
+}
+@media (min-width: 76.25em) {
+  .md-header .md-header__button[for="__drawer"] {
+    display: none;
+  }
+  .md-header a.md-header__button.md-logo.archive-desktop-logo {
+    display: flex;
+  }
+}
