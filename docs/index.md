@@ -18,12 +18,13 @@
 
 <div class="archive-card-grid">
   <a class="archive-card archive-feature" href="timeline/"><span class="archive-card-kicker">01 / 基幹コンテンツ</span><strong>日本史 × 千手氏の並列年表</strong><span>同じ時代の日本史と各系統の動向を並べてたどる。現在、表示方式を準備しています。</span><span class="archive-card-arrow">年表へ →</span></a>
-  <a class="archive-card" href="lineages/"><span class="archive-card-kicker">02 / 系統</span><strong>系統から探す</strong><span>筑前・豊前香春・日向高鍋・肥前小城の四系統を色分けし、それぞれの概要へ進めます。</span><span class="archive-card-arrow">系統一覧へ →</span></a>
-  <a class="archive-card" href="persons/"><span class="archive-card-kicker">03 / 人物</span><strong>人物から探す</strong><span>人物ごとの事績・関係する出来事と典拠を結び付けます。</span><span class="archive-card-arrow">人物一覧へ →</span></a>
-  <a class="archive-card" href="events/"><span class="archive-card-kicker">04 / 事件・合戦</span><strong>事件・合戦から探す</strong><span>合戦・移封・移住などの経過と各系統との関係を、史料に基づいて整理します。</span><span class="archive-card-arrow">事件の入口へ →</span></a>
-  <a class="archive-card" href="sources/"><span class="archive-card-kicker">05 / 史料</span><strong>史料から探す</strong><span>文献の所在・記載・翻刻・現代語訳・考証を整理します。</span><span class="archive-card-arrow">史料一覧へ →</span></a>
-  <a class="archive-card" href="sites/"><span class="archive-card-kicker">06 / 史跡</span><strong>史跡から探す</strong><span>歴史に関わる場所と、関連する事件・史料・人物をたどります。</span><span class="archive-card-arrow">史跡一覧へ →</span></a>
-  <a class="archive-card" href="about/"><span class="archive-card-kicker">07 / 案内</span><strong>このサイトについて</strong><span>編纂の目的・史料の取り扱い・公開準備状況を紹介します。</span><span class="archive-card-arrow">ご案内へ →</span></a>
+  <a class="archive-card" href="periods/"><span class="archive-card-kicker">02 / 時代</span><strong>時代から探す</strong><span>平安・鎌倉・南北朝・室町・戦国・江戸などを年代順に詳しく調べます。</span><span class="archive-card-arrow">時代一覧へ →</span></a>
+  <a class="archive-card" href="lineages/"><span class="archive-card-kicker">03 / 系統・地域</span><strong>系統・地域から探す</strong><span>福岡・宮崎・佐賀の県名から四系統の概要へ進めます。</span><span class="archive-card-arrow">系統一覧へ →</span></a>
+  <a class="archive-card" href="persons/"><span class="archive-card-kicker">04 / 人物</span><strong>人物から探す</strong><span>人物ごとの事績・関係する出来事と典拠を結び付けます。</span><span class="archive-card-arrow">人物一覧へ →</span></a>
+  <a class="archive-card" href="events/"><span class="archive-card-kicker">05 / 事件・合戦</span><strong>事件・合戦から探す</strong><span>合戦・移封・移住などの経過と各系統との関係を、史料に基づいて整理します。</span><span class="archive-card-arrow">事件の入口へ →</span></a>
+  <a class="archive-card" href="sources/"><span class="archive-card-kicker">06 / 史料</span><strong>史料から探す</strong><span>文献の所在・記載・翻刻・現代語訳・考証を整理します。</span><span class="archive-card-arrow">史料一覧へ →</span></a>
+  <a class="archive-card" href="sites/"><span class="archive-card-kicker">07 / 史跡</span><strong>史跡から探す</strong><span>歴史に関わる場所と、関連する事件・史料・人物をたどります。</span><span class="archive-card-arrow">史跡一覧へ →</span></a>
+  <a class="archive-card" href="about/"><span class="archive-card-kicker">08 / 案内</span><strong>このサイトについて</strong><span>編纂の目的・史料の取り扱い・公開準備状況を紹介します。</span><span class="archive-card-arrow">ご案内へ →</span></a>
 </div>
 
 ## 現在の準備状況
@@ -36,6 +37,6 @@
 
 [初めての方へ](guides/reading-guide.md)では、年表・系統・人物・史料の読み進め方を紹介しています。[編纂方針](guides/editorial-policy.md)では史料の扱いや考証の基本姿勢を説明しています。
 
-人物・地域・時代など、共通する話題から読みたい場合は、[タグから探す](tags/)で関連記事をまとめて探せます。歴史資料の所在を調べたい場合は、[関連機関・史料調査リンク](links/)もご覧ください。
+人物・地域・時代など、共通する話題から読みたい場合は、[関連タグ](tags/)で関連氏族・研究テーマを横断して探せます。歴史資料の所在を調べたい場合は、[関連機関・史料調査リンク](links/)もご覧ください。
 
 史料情報のご提供や記事の訂正については、[お問い合わせフォーム](contact.md)からご連絡いただけます。

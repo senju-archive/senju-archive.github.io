@@ -1,16 +1,18 @@
-# 系統から探す
+# 系統・地域から探す
 
 <div class="archive-status">主要四系統の概要を公開 ／ 個別史料は順次整備中</div>
 
-千手氏の各系統を、**活動した地域・時代・主家・史料**からたどるための入口です。[千手氏とは](../senju/)で全体像をつかんだ後、関心のある系統を選んでください。
+**現在の都道府県と歴史的な系統名**から、千手氏の活動地・時代・主家・史料をたどる入口です。[千手氏とは](../senju/)で全体像をつかんだ後、関心のある系統を選んでください。
 
-色は各系統を見分けるための補助です。**色だけに頼らず、必ず系統名と地域名を併記**しています。
+県名は現在の地域を探す補助で、歴史上の国境や一族の活動範囲を限定しません。色は各系統を見分けるための補助です。**色だけに頼らず、必ず系統名と地域名を併記**しています。
 
 ## 主要四系統
 
 <div class="lineage-grid">
   <a class="lineage-card ln-chikuzen" href="chikuzen/">
     <span class="lineage-card-number">01 ／ 主要系統</span>
+    <span class="lineage-prefecture">福岡県</span>
+    <span class="lineage-modern">嘉麻市・筑前町周辺</span>
     <strong class="lineage-card-name">筑前千手氏（嘉麻・夜須）</strong>
     <span class="lineage-card-region">筑前国嘉麻郡千手・夜須郡千手</span>
     <span class="lineage-card-summary">古処山を挟む嘉麻・夜須を中心とした初期の活動。原田氏・秋月氏との関係、千手城、南北朝・室町期の動向を調べます。</span>
@@ -18,6 +20,8 @@
   </a>
   <a class="lineage-card ln-buzen" href="buzen/">
     <span class="lineage-card-number">02 ／ 主要系統</span>
+    <span class="lineage-prefecture">福岡県</span>
+    <span class="lineage-modern">香春町・福智町周辺</span>
     <strong class="lineage-card-name">豊前香春千手氏（のち金田定着）</strong>
     <span class="lineage-card-region">豊前国田川郡香春 → 西金田</span>
     <span class="lineage-card-summary">香春岳城（鬼ヶ岳城）に関わる系統と、落城後に西金田へ定着したと伝わる一門の歴史をたどります。</span>
@@ -25,6 +29,8 @@
   </a>
   <a class="lineage-card ln-takanabe" href="takanabe/">
     <span class="lineage-card-number">03 ／ 主要系統</span>
+    <span class="lineage-prefecture">宮崎県</span>
+    <span class="lineage-modern">高鍋町周辺</span>
     <strong class="lineage-card-name">日向高鍋千手氏</strong>
     <span class="lineage-card-region">筑前の秋月家臣団 → 日向国高鍋</span>
     <span class="lineage-card-summary">秋月氏の移封とともに日向へ移った一門。高鍋藩士としての活動や藩校明倫堂に関わる千手氏を紹介します。</span>
@@ -32,6 +38,8 @@
   </a>
   <a class="lineage-card ln-ogi" href="ogi/">
     <span class="lineage-card-number">04 ／ 主要系統</span>
+    <span class="lineage-prefecture">佐賀県</span>
+    <span class="lineage-modern">小城市周辺</span>
     <strong class="lineage-card-name">肥前小城千手氏</strong>
     <span class="lineage-card-region">筑紫家臣の千手氏 → 肥前国小城</span>
     <span class="lineage-card-summary">小城藩鍋島家に仕えた系統。千手喜雲の伝承、武芸、小城藩士としての歩みなどを調べます。</span>
@@ -39,7 +47,7 @@
   </a>
 </div>
 
-同じ時代や地域の話題を扱う記事は、[タグから探す](../tags/)からまとめて調べることもできます。
+すべての系統を混ぜた年代別一覧は[時代から探す](../periods/)で、原田氏・秋月氏などの関係先は[関連タグ](../tags/)で調べられます。
 
 ## 系統分類を読む際の注意
 

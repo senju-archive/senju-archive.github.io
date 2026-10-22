@@ -153,3 +153,22 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
 .event-factions h3 { margin: 0 0 .55rem; font-size: .9rem; }
 .event-factions p { margin: .4rem 0; font-size: .84rem; }
 @media (max-width: 750px) { .event-route,.event-factions { grid-template-columns: minmax(0,1fr); } }
+
+
+/* 時代索引・時系列行 */
+.period-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:1.1rem 0 1.8rem;}
+.md-typeset a.period-card {display:flex;flex-direction:column;gap:.45rem;padding:1rem;border:1px solid #d9d1c8;border-left:4px solid var(--archive-red);border-radius:.35rem;background:#fff;color:var(--archive-ink);text-decoration:none;}
+.period-order {font-size:.7rem;font-weight:700;color:var(--archive-gold-text);}
+.period-card strong {font-size:.97rem;}
+.period-card span:not(.period-order):not(.period-arrow) {font-size:.78rem;line-height:1.7;}
+.period-arrow {margin-top:auto;color:var(--archive-red);font-size:.74rem;font-weight:700;}
+.md-typeset a.period-card:is(:hover,:focus-visible) {border-color:var(--archive-red);box-shadow:0 3px 12px rgba(43,43,43,.09);}
+.period-entries {display:grid;border-top:1px solid #dad3c9;margin:1rem 0 1.75rem;}
+.period-entry {display:grid;grid-template-columns:minmax(9rem,.65fr) minmax(0,2fr);gap:.6rem 1.2rem;padding:1rem .5rem;border-bottom:1px solid #e6e0d8;min-width:0;}
+.period-date strong {color:var(--archive-red);font-size:.84rem;}
+.period-detail strong {color:var(--archive-ink);font-size:.91rem;}
+.period-detail p {font-size:.82rem;line-height:1.75;margin:.4rem 0;}
+.period-detail a {font-size:.79rem;font-weight:700;}
+.lineage-prefecture {font-size:1.24rem;font-weight:800;line-height:1.4;color:var(--ln-text);}
+.lineage-modern {font-size:.77rem;font-weight:600;color:#504a41;}
+@media (max-width:720px){.period-grid {grid-template-columns:minmax(0,1fr);} .period-entry{display:flex;flex-direction:column;gap:.3rem;}}
