@@ -1,5 +1,11 @@
 # 関連事典｜個別記事のレイアウト見本
 
+<nav class="article-context" aria-label="表示見本の分類">
+  <span class="article-context-label">記事の位置</span>
+  <a href="../../encyclopedia/">関連事典</a><span class="article-context-separator" aria-hidden="true">›</span>
+  <strong>関連事典記事</strong><span class="article-context-kind">表示見本</span>
+</nav>
+
 <div class="archive-status">共通の表示枠 ／ 実際の記事ではありません</div>
 
 地名・史跡・関連氏族・制度・歴史用語の解説に使う共通フォーマットです。**この見本に実在項目の説明や未確認の史実を仮登録しません。**

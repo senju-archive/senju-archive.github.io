@@ -1,5 +1,11 @@
 # 人物記事｜表示レイアウト見本
 
+<nav class="article-context" aria-label="表示見本の分類">
+  <span class="article-context-label">記事の位置</span>
+  <a href="../../persons/">人物索引</a><span class="article-context-separator" aria-hidden="true">›</span>
+  <strong>人物記事</strong><span class="article-context-kind">表示見本</span>
+</nav>
+
 <div class="archive-status">PC・スマホ表示確認用 ／ 実在人物の記事ではありません</div>
 
 人物記事は **1人につき1ページ** とし、概要だけを読む人から、根拠を詳しく調べる人まで同じページを使えるようにします。
@@ -29,6 +35,10 @@
  <div role="listitem"><strong>年代の表示枠</strong><span>この時期の出来事と典拠リンク</span></div>
  <div role="listitem"><strong>年代の表示枠</strong><span>別の出来事。年代未詳なら推測値を作らない</span></div>
 </div>
+
+## 事績の根拠をたどる
+
+人物の事績は、可能な限りその記述の近くから、[個別史料記載（SENJU）の見本](../senju/)で示すような根拠の記録へつなぎます。個別記載のページからは親文献（DOC）の所蔵・該当箇所を確認できる構造とし、単に関連記事を並べるだけでなく「どの主張をどの史料が支えるか」が分かるようにします。未公開・未照合の史料にリンクを作りません。
 
 ## 異説・同定上の論点
 

@@ -27,6 +27,8 @@ jobs:
         run: zensical build --clean
       - name: Verify tag index and cross-page links
         run: python scripts/validate_site_links.py
+      - name: Check all generated internal links
+        run: python scripts/check_internal_links.py
       - name: Upload generated site
         uses: actions/upload-pages-artifact@v5
         with:

@@ -1,5 +1,11 @@
 # 事件・合戦記事｜表示レイアウト見本
 
+<nav class="article-context" aria-label="表示見本の分類">
+  <span class="article-context-label">記事の位置</span>
+  <a href="../../events/">事件・合戦索引</a><span class="article-context-separator" aria-hidden="true">›</span>
+  <strong>事件・合戦記事</strong><span class="article-context-kind">表示見本</span>
+</nav>
+
 <div class="archive-status">PC・スマホ表示確認用 ／ 実際の事件記事ではありません</div>
 
 事件・合戦記事は原則として**一つの出来事につき一つのページ**にまとめます。合戦だけでなく、移封・移住・主家の変動など、複数の人物・系統にまたがる出来事も扱います。

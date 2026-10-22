@@ -1,5 +1,11 @@
 # 個別史料記載（SENJU）｜表示レイアウト見本
 
+<nav class="article-context" aria-label="表示見本の分類">
+  <span class="article-context-label">記事の位置</span>
+  <a href="../../sources/">史料索引</a><span class="article-context-separator" aria-hidden="true">›</span>
+  <strong>個別史料記載（SENJU）</strong><span class="article-context-kind">表示見本</span>
+</nav>
+
 <div class="archive-status">3層構造の表示確認用 ／ 実史料は未掲載</div>
 
 SENJUは、文献中の特定の記載や日付条を扱うページです。**親となるDOCを必ず指定**し、根拠の箇所を第三者が追跡できるようにします。

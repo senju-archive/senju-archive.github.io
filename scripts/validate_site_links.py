@@ -33,4 +33,21 @@ assert "../sites/" in en, "Encyclopedia lacks the historic sites index"
 assert "encyclopedia/" in html("sites/index.html")
 assert "関連事典" in html("previews/encyclopedia/index.html")
 assert "関連タグ" in html("tags/index.html")
-print("Validated periods, encyclopedia links, historic sites route, and related tags.")
+# Context and anchored record links
+for lineage,years in {
+    "chikuzen": [1185,1323,1337,1354],
+    "buzen": [1394,1399],
+    "takanabe": [1587,1621,1777],
+    "ogi": [1617],
+}.items():
+    entry=html(f"lineages/{lineage}/index.html")
+    assert "article-context" in entry and "article-shortcuts" in entry, lineage
+    for year in years:
+        assert f"#record-{year}" in entry, (lineage,year)
+        assert any(f'id="record-{year}"' in html(str(p.relative_to(site)))
+                   for p in (site/"periods").glob("*/index.html")), (lineage,year)
+for preview in ("person","event","doc","senju","encyclopedia"):
+    assert 'article-context' in html(f"previews/{preview}/index.html")
+assert "千手氏の人物" in html("persons/index.html")
+assert "関連人物" in html("persons/index.html")
+print("Validated period/lineage context, record anchors, article layouts and related tags.")

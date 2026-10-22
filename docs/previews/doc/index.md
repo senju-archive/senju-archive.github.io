@@ -1,5 +1,11 @@
 # 文献解題（DOC）｜表示レイアウト見本
 
+<nav class="article-context" aria-label="表示見本の分類">
+  <span class="article-context-label">記事の位置</span>
+  <a href="../../sources/">史料索引</a><span class="article-context-separator" aria-hidden="true">›</span>
+  <strong>文献解題（DOC）</strong><span class="article-context-kind">表示見本</span>
+</nav>
+
 <div class="archive-status">レイアウト確認用 ／ 実史料の書誌ではありません</div>
 
 DOCは **一つの文献・史料そのもの** を説明するページです。個別の記述（SENJU）とは分けて管理します。史料の種別は表示しますが、種類だけを根拠にした信頼性の格付けは行いません。
@@ -26,7 +32,7 @@ DOCは **一つの文献・史料そのもの** を説明するページです�
 
 ## 関連する個別史料記載（SENJU）
 
-同じ文献中に複数の記述があっても、SENJUごとに別のレコードとして表示します。
+同じ文献中に複数の記述があっても、SENJUごとに別のレコードとして表示します。**文献の書誌から、その文献中のどの記述が、どの人物・事件を裏づけるのか**まで直接たどれるようにします。
 
 <div class="entry-related">
  <a href="../senju/">個別記載（SENJU）の表示見本 →</a>
