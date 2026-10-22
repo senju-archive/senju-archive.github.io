@@ -45,7 +45,7 @@
     <label class="md-header__button md-icon" for="__drawer">
       {% set icon = config.theme.icon.menu or "material/menu" %}
       {% include ".icons/" ~ icon ~ ".svg" %}
-      <span class="md-visually-hidden">{{ lang.t('nav') }}</span>
+      <span class="md-visually-hidden">メニューを開く</span>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -82,7 +82,7 @@
         <label class="md-header__button md-icon" for="__search">
           {% set icon = config.theme.icon.search or "material/magnify" %}
           {% include ".icons/" ~ icon ~ ".svg" %}
-          <span class="md-visually-hidden">{{ lang.t('search') }}</span>
+          <span class="md-visually-hidden">検索を開く</span>
         </label>
         {% include "partials/search.html" %}
       {% endif %}

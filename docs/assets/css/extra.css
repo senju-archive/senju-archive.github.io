@@ -554,3 +554,64 @@ body:has(.tl-preview) .md-content__inner { max-width: none; }
   .archive-hero .archive-lede { font-size: 1.32rem; }
   .archive-hero-actions { width: 100%; }
 }
+
+/* 第3次調整：スマホでのヘッダー視認性と全ページの左右余白。
+   SNS／ロゴ配色は変更せず、読みやすさと操作性を補修（2026-10-22）。 */
+
+/* 公式ロゴを載せた深緋の帯では、サイト名と操作アイコンを必ず明色にする。
+   現行テーマ側が黒を指定する場合も対比を維持する。 */
+.md-header .md-header__title,
+.md-header .md-header__topic.archive-header-home,
+.md-header .md-header__topic.archive-header-home .md-ellipsis,
+.md-header .md-header__button.md-icon {
+  color: #fff9ed !important;
+}
+.md-header .md-header__topic.archive-header-home {
+  font-family: "Noto Serif JP", "Noto Serif CJK JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-weight: 700;
+  letter-spacing: .035em;
+  text-shadow: none;
+}
+.md-header .md-header__button.md-icon svg { fill: currentColor; }
+.md-header .md-header__button.md-icon:is(:hover,:focus-visible),
+.md-header .md-header__topic.archive-header-home:is(:hover,:focus-visible) {
+  color: #ffffff !important;
+}
+
+/* 音声読み上げに必要なラベルは残し、アイコン下への英語露出は抑止。 */
+.md-header .md-header__button.md-icon .md-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* 全記事・索引に適用。親の幅より広がらず、本文は左右16〜20pxの余白を確保。 */
+@media (max-width: 760px) {
+  .md-content { min-width: 0; }
+  .md-main .md-content__inner,
+  body:has(.tl-preview) .md-main .md-content__inner {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: clamp(16px, 4.5vw, 20px);
+    padding-right: clamp(16px, 4.5vw, 20px);
+  }
+  .md-header .md-header__title {
+    min-width: 0;
+    font-size: .84rem;
+  }
+  .md-header .md-header__button.md-icon {
+    flex: none;
+  }
+  .md-typeset h1 { overflow-wrap: anywhere; }
+}

@@ -64,4 +64,15 @@ assert "senju_archive_logo_master_v1.png" in homepage
 assert "千手氏の平家出自" in html("about/index.html")
 assert (site/"assets/images/senju_archive_logo_master_v1.png").is_file()
 assert "senju_archive_logo_master_v1.png" in homepage
-print("Validated navigation, emblem asset, design hero and content indexes.")
+# Mobile design safety checks: labels stay accessible without visible English,
+# header text remains legible, and narrow screens retain reading gutters.
+header=html("index.html")
+style=html("assets/css/extra.css") if (site/"assets/css/extra.css").is_file() else (site/"assets/css/extra.css").read_text("utf-8")
+for label in ("メニューを開く","検索を開く"):
+    assert label in header, label
+assert "md-header__topic.archive-header-home" in style
+assert "color: #fff9ed" in style
+assert "padding-left: clamp(16px, 4.5vw, 20px)" in style
+assert "padding-right: clamp(16px, 4.5vw, 20px)" in style
+assert "<strong>千手氏（せんじゅし）</strong>" in html("senju/index.html")
+print("Validated navigation, logo, mobile readability styles and content indexes.")
