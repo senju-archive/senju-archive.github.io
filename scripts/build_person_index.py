@@ -53,8 +53,7 @@ def build_index():
  "# 人物から探す","",
  "千手氏の人物を、**系統別**または**名前・通称の読みの五十音順**で探せます。"
  "五十音順では名字「千手」を除きます。人名の読みが未確認なら勝手に決めず、末尾に分けます。","",
- "掲載人名には、系図や伝承に見える人物も含まれます。"
- 
+ "掲載人名には、系図や伝承に見える人物も含まれます。","",
  '<div class="person-index">',
  '<input class="person-view-radio" id="person-view-lineage" type="radio" name="person-view" checked>',
  '<input class="person-view-radio" id="person-view-kana" type="radio" name="person-view">',
