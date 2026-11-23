@@ -7,15 +7,13 @@ title: 千手氏歴史アーカイブ
   <h1 id="archive-home-title">千手氏歴史アーカイブ</h1>
 </header>
 
-<div class="archive-status" role="status">サイト構築中 ／ 掲載記事を順次整備中</div>
-
 <div class="archive-hero">
   <div class="archive-hero-mark">
     <img src="assets/images/senju_archive_logo_master_v1.png" alt="千手氏歴史アーカイブの蓮華ロゴ" width="168" height="168" loading="eager" decoding="async">
   </div>
   <div class="archive-hero-copy">
     <p class="archive-lede"><span class="archive-lede-line">史料からたどる、</span><span class="archive-lede-line">千手氏の歴史。</span></p>
-    <p class="archive-hero-description">日本史の流れと千手氏の各系統を照らし合わせ、人物・史料・土地のつながりを調べられるデジタルアーカイブを準備しています。</p>
+    <p class="archive-hero-description">古文書・系図・地域史を手がかりに、千手氏の人物、活動した土地、各時代の出来事を紹介します。</p>
     <div class="archive-hero-actions">
       <a class="archive-hero-button" href="senju/">千手氏とは <span aria-hidden="true">→</span></a>
       <a class="archive-hero-button archive-hero-button-quiet" href="periods/">時代から探す <span aria-hidden="true">→</span></a>
@@ -27,26 +25,20 @@ title: 千手氏歴史アーカイブ
 
 **[千手氏とは ―― 起源・歴史・各系統の概要](senju/)**
 
-筑前国嘉麻郡千手を拠点とした千手氏の成り立ちから、豊前香春・日向高鍋・肥前小城への展開までを概観します。初めて千手氏の歴史に触れる方はこちらからどうぞ。
+筑前嘉麻、豊前香春、日向高鍋、肥前小城に関わる千手姓の人物や家の歴史を、古記録・系図・地域史をもとにたどります。
 
 ## アーカイブの入口
 
 <div class="archive-card-grid">
-  <a class="archive-card archive-feature" href="timeline/"><span class="archive-card-kicker">01 / 基幹コンテンツ</span><strong>日本史 × 千手氏の並列年表</strong><span>同じ時代の日本史と各系統の動向を並べてたどる。現在、表示方式を準備しています。</span><span class="archive-card-arrow">年表へ →</span></a>
+  <a class="archive-card archive-feature" href="timeline/"><span class="archive-card-kicker">01 / 基幹コンテンツ</span><strong>日本史 × 千手氏の並列年表</strong><span>日本史と千手氏の記録を同じ年代でたどる。</span><span class="archive-card-arrow">年表へ →</span></a>
   <a class="archive-card" href="periods/"><span class="archive-card-kicker">02 / 時代</span><strong>時代から探す</strong><span>平安・鎌倉・南北朝・室町・戦国・江戸などを年代順に詳しく調べます。</span><span class="archive-card-arrow">時代一覧へ →</span></a>
   <a class="archive-card" href="lineages/"><span class="archive-card-kicker">03 / 系統・地域</span><strong>系統・地域から探す</strong><span>福岡・宮崎・佐賀の県名から四系統の概要へ進めます。</span><span class="archive-card-arrow">系統一覧へ →</span></a>
   <a class="archive-card" href="persons/"><span class="archive-card-kicker">04 / 人物</span><strong>人物から探す</strong><span>人物ごとの事績・関係する出来事と典拠を結び付けます。</span><span class="archive-card-arrow">人物一覧へ →</span></a>
   <a class="archive-card" href="events/"><span class="archive-card-kicker">05 / 事件・合戦</span><strong>事件・合戦から探す</strong><span>合戦・移封・移住などの経過と各系統との関係を、史料に基づいて整理します。</span><span class="archive-card-arrow">事件の入口へ →</span></a>
   <a class="archive-card" href="sources/"><span class="archive-card-kicker">06 / 史料</span><strong>史料から探す</strong><span>文献の所在・記載・翻刻・現代語訳・考証を整理します。</span><span class="archive-card-arrow">史料一覧へ →</span></a>
   <a class="archive-card" href="encyclopedia/"><span class="archive-card-kicker">07 / 関連事典</span><strong>関連事典から探す</strong><span>嘉麻市などの地名、城跡、関連氏族、高鍋藩の制度・用語を調べます。</span><span class="archive-card-arrow">関連事典へ →</span></a>
-  <a class="archive-card" href="about/"><span class="archive-card-kicker">08 / 案内</span><strong>このサイトについて</strong><span>編纂の目的・史料の取り扱い・公開準備状況を紹介します。</span><span class="archive-card-arrow">ご案内へ →</span></a>
+  <a class="archive-card" href="about/"><span class="archive-card-kicker">08 / 案内</span><strong>このサイトについて</strong><span>このアーカイブの目的と史料の取り扱いをご案内します。</span><span class="archive-card-arrow">ご案内へ →</span></a>
 </div>
-
-## 現在の準備状況
-
-このサイトは **PC・スマートフォンでの表示確認を行いながら整備している試験公開サイト** です。史料本文・人物記事・本格的な年表の公開は、原資料の照合と公開可否の確認を経て段階的に行います。
-
-<div class="archive-note"><strong>閲覧される方へ</strong><p>現在のページは機能とデザインの確認用です。掲載予定の項目は、まだ個別史料の存在や公開の確定を示すものではありません。</p></div>
 
 ## はじめて訪れた方へ
 
