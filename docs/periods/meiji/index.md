@@ -20,7 +20,7 @@
   <div class="period-entry"><div class="period-date"><strong>年代未詳</strong></div><div class="period-detail"><strong>高鍋町長・千手文一郎に関する記述</strong><p>明治期の活動とされますが、役職の正確な期間は原資料を照合中です。</p><a href="../../lineages/takanabe/">日向高鍋千手氏の概説へ →</a></div></div>
 </div>
 
-<div class="archive-note"><strong>典拠について</strong><p>このページは『千手氏 古代中世編年史料』『千手氏 近世（江戸）以降の記録』と既存概説を基にした閲覧用の暫定索引です。原史料の照合・公開審査を終えた個別記事ではありません。後世の伝承、当時の史料記載、考察を区別して整備します。</p></div>
+<div class="archive-note"><strong>典拠について</strong><p>このページは、各時代の人物・出来事に関わる記録を年代順に探すための暫定案内です。個々の記録の出典・原資料の位置などは照合を進め、確認した史料記事で示します。史料記載と後世の伝承・研究上の推定は区別して紹介します。</p></div>
 
 ## 他の入口から探す
 
