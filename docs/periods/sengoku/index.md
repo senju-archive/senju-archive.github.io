@@ -1,8 +1,6 @@
 # 戦国時代から探す
 
-<div class="archive-status">時代別の案内 ／ 史料の個別記事は順次公開予定</div>
-
-所領・主家・諸勢力の変動を、**系統を区別せず年代順**に並べています。年代の確定していない事項は末尾に分けています。
+文明10年（1478年）の千手盛景・正景の知行に関する記録や、筑紫氏家臣の千手姓にまつわる伝承をたどります。
 
 <nav class="period-neighbors" aria-label="前後の時代に移動">
   <a class="period-neighbor" href="../muromachi/"><span>← 前の時代</span><strong>室町時代</strong></a>
@@ -21,8 +19,6 @@
 <div class="period-entries">
   <div class="period-entry"><div class="period-date"><strong>年代未詳</strong></div><div class="period-detail"><strong>筑紫家臣の千手氏をめぐる伝承</strong><p>後の肥前小城系につながる可能性のある活動。確かな年次は史料照合中です。</p><a href="../../lineages/ogi/">肥前小城千手氏の概説へ →</a></div></div>
 </div>
-
-<div class="archive-note"><strong>典拠について</strong><p>このページは、各時代の人物・出来事に関わる記録を年代順に探すための暫定案内です。個々の記録の出典・原資料の位置などは照合を進め、確認した史料記事で示します。史料記載と後世の伝承・研究上の推定は区別して紹介します。</p></div>
 
 ## 他の入口から探す
 

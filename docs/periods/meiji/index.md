@@ -1,8 +1,6 @@
 # 明治時代から探す
 
-<div class="archive-status">時代別の案内 ／ 史料の個別記事は順次公開予定</div>
-
-近代の地域社会と千手氏を、**系統を区別せず年代順**に並べています。年代の確定していない事項は末尾に分けています。
+明治期の高鍋には、千手文一郎が地域行政に関わったとする記述が伝わっています。
 
 <nav class="period-neighbors" aria-label="前後の時代に移動">
   <a class="period-neighbor" href="../edo/"><span>← 前の時代</span><strong>江戸時代</strong></a>
@@ -10,17 +8,12 @@
   
 </nav>
 
-## 年代順の関連項目
 
-年代が確認できる項目の公開準備を進めています。
-
-## 年代未詳・後世伝承
+## 年代未詳の記録
 
 <div class="period-entries">
   <div class="period-entry"><div class="period-date"><strong>年代未詳</strong></div><div class="period-detail"><strong>高鍋町長・千手文一郎に関する記述</strong><p>明治期の活動とされますが、役職の正確な期間は原資料を照合中です。</p><a href="../../lineages/takanabe/">日向高鍋千手氏の概説へ →</a></div></div>
 </div>
-
-<div class="archive-note"><strong>典拠について</strong><p>このページは、各時代の人物・出来事に関わる記録を年代順に探すための暫定案内です。個々の記録の出典・原資料の位置などは照合を進め、確認した史料記事で示します。史料記載と後世の伝承・研究上の推定は区別して紹介します。</p></div>
 
 ## 他の入口から探す
 

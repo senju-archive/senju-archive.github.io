@@ -7,6 +7,9 @@ def html(path):
     assert file.is_file(), f"Missing {file}"
     return file.read_text("utf-8")
 
+def preview_source(name):
+    return (Path("planning")/"article-layout-previews"/name/"index.md").read_text("utf-8")
+
 tags=html("tags/index.html")
 for term in ("原田氏","秋月氏","城郭攻防","移封","鍋島氏"):
     assert term in tags, f"Missing related tag {term}"
@@ -31,7 +34,7 @@ for label in ("地域・地名","城郭・史跡","関連氏族","制度・用�
     assert label in en, f"Encyclopedia category missing: {label}"
 assert "../sites/" in en, "Encyclopedia lacks the historic sites index"
 assert "encyclopedia/" in html("sites/index.html")
-assert "関連事典" in html("previews/encyclopedia/index.html")
+assert "関連事典" in preview_source("encyclopedia")
 assert "関連タグ" in html("tags/index.html")
 # Context and anchored record links
 for lineage,years in {
@@ -46,19 +49,20 @@ for lineage,years in {
         assert f"#record-{year}" in entry, (lineage,year)
         assert any(f'id="record-{year}"' in html(str(p.relative_to(site)))
                    for p in (site/"periods").glob("*/index.html")), (lineage,year)
+assert not (site/"previews").exists(), "Layout templates are not public pages"
 for preview in ("person","event","doc","senju","encyclopedia"):
-    assert 'article-context' in html(f"previews/{preview}/index.html")
+    assert 'article-context' in preview_source(preview)
 # Five article types: show consistent three-part in-page navigation,
 # with explicit IDs instead of depending on Markdown heading slug rules.
 for template in ("person","event","doc","senju","encyclopedia"):
-    content=html(f"previews/{template}/index.html")
+    content=preview_source(template)
     assert 'class="entry-quick-nav"' in content, template
     for anchor in ("article-overview","article-evidence","article-related"):
         assert f'id="{anchor}"' in content, (template,anchor)
         assert f'href="#{anchor}"' in content, (template,anchor)
 # Original and transcription are separate serif text blocks. Translation
 # must remain separately identified, rather than inheriting source typography.
-source_preview = html("previews/senju/index.html")
+source_preview = preview_source("senju")
 for class_name in ("source-reading--original","source-reading--transcription",
                    "source-reading--kundoku","source-reading--translation"):
     assert f'class="source-reading {class_name}"' in source_preview, class_name
@@ -127,3 +131,19 @@ for page in ("senju/index.html", "lineages/index.html", "timeline/index.html", "
     for old_label in ("筑前千手氏（嘉麻・夜須）", "豊前香春千手氏（のち金田定着）"):
         assert old_label not in body, (page, old_label)
 assert "夜須" not in html("lineages/chikuzen/index.html")
+
+# Public pages must not expose internal workflow terminology or layout notes.
+reader_pages = (
+    "index.html", "senju/index.html", "lineages/index.html",
+    "timeline/index.html", "sources/index.html", "events/index.html",
+    "encyclopedia/index.html", "sites/index.html", "persons/index.html",
+)
+editor_only_phrases = (
+    "レイアウト試験中", "表示方式の試作", "研究用データベース",
+    "公開時に自動生成", "以前の「史跡から探す」",
+    "（DOC）", "（SENJU）", "サイト構築中",
+)
+for page in reader_pages:
+    content = html(page)
+    for phrase in editor_only_phrases:
+        assert phrase not in content, (page, phrase)
