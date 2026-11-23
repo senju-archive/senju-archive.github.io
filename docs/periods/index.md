@@ -12,7 +12,7 @@
   <a class="period-card" href="ancient/"><span class="period-order">01</span><strong>古代（飛鳥・奈良時代）</strong><span>古代の開祖伝承と史料上の位置づけ</span><span class="period-arrow">この時代へ →</span></a>
   <a class="period-card" href="heian/"><span class="period-order">02</span><strong>平安時代</strong><span>原田氏と千手氏の初期をめぐる記録</span><span class="period-arrow">この時代へ →</span></a>
   <a class="period-card" href="kamakura/"><span class="period-order">03</span><strong>鎌倉時代</strong><span>初期系譜と鎌倉末期の在地活動</span><span class="period-arrow">この時代へ →</span></a>
-  <a class="period-card" href="nanbokucho/"><span class="period-order">04</span><strong>南北朝時代</strong><span>筑前千手氏の軍事活動と千手城</span><span class="period-arrow">この時代へ →</span></a>
+  <a class="period-card" href="nanbokucho/"><span class="period-order">04</span><strong>南北朝時代</strong><span>筑前嘉麻に関わる軍事活動の記録と千手城</span><span class="period-arrow">この時代へ →</span></a>
   <a class="period-card" href="muromachi/"><span class="period-order">05</span><strong>室町時代</strong><span>豊前の香春岳城にまつわる記録と伝承</span><span class="period-arrow">この時代へ →</span></a>
   <a class="period-card" href="sengoku/"><span class="period-order">06</span><strong>戦国時代</strong><span>所領・主家・諸勢力の変動</span><span class="period-arrow">この時代へ →</span></a>
   <a class="period-card" href="azuchi-momoyama/"><span class="period-order">07</span><strong>安土桃山時代</strong><span>九州平定と秋月氏家臣団の動向</span><span class="period-arrow">この時代へ →</span></a>
