@@ -13,7 +13,7 @@
 ## 年代順の関連項目
 
 <div class="period-entries" aria-label="年代順の案内">
-  <div class="period-entry" id="record-1478" data-year="1478"><div class="period-date"><strong>1478年（文明10年）</strong></div><div class="period-detail"><strong>千手盛景・正景の知行に関する記録</strong><p>筑前での在地活動を考える手掛かり。個別史料の照合は継続中です。</p><a href="../../lineages/chikuzen/">筑前千手氏の概説へ →</a></div></div>
+  <div class="period-entry" id="record-1478" data-year="1478"><div class="period-date"><strong>1478年（文明10年）</strong></div><div class="period-detail"><strong>千手盛景・正景の知行に関する記録</strong><p>筑前での在地活動を考える手掛かり。個別史料の照合は継続中です。</p><a href="../../lineages/chikuzen/">筑前嘉麻千手氏の概説へ →</a></div></div>
 </div>
 
 ## 年代未詳・後世伝承
@@ -22,7 +22,7 @@
   <div class="period-entry"><div class="period-date"><strong>年代未詳</strong></div><div class="period-detail"><strong>筑紫家臣の千手氏をめぐる伝承</strong><p>後の肥前小城系につながる可能性のある活動。確かな年次は史料照合中です。</p><a href="../../lineages/ogi/">肥前小城千手氏の概説へ →</a></div></div>
 </div>
 
-<div class="archive-note"><strong>典拠について</strong><p>このページは『千手氏 古代中世編年史料』『千手氏 近世（江戸）以降の記録』と既存概説を基にした閲覧用の暫定索引です。原史料の照合・公開審査を終えた個別記事ではありません。後世の伝承、当時の史料記載、考察を区別して整備します。</p></div>
+<div class="archive-note"><strong>典拠について</strong><p>このページは、各時代の人物・出来事に関わる記録を年代順に探すための暫定案内です。個々の記録の出典・原資料の位置などは照合を進め、確認した史料記事で示します。史料記載と後世の伝承・研究上の推定は区別して紹介します。</p></div>
 
 ## 他の入口から探す
 

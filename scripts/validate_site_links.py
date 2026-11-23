@@ -117,3 +117,13 @@ assert "padding-left: clamp(16px, 4.5vw, 20px)" in style
 assert "padding-right: clamp(16px, 4.5vw, 20px)" in style
 assert "<strong>千手氏（せんじゅし）</strong>" in html("senju/index.html")
 print("Validated navigation, logo, mobile readability styles and content indexes.")
+
+# Canonical editorial lineage labels, not assertions of common ancestry.
+expected_lineages = ("筑前嘉麻千手氏", "豊前香春千手氏", "日向高鍋千手氏", "肥前小城千手氏")
+for page in ("senju/index.html", "lineages/index.html", "timeline/index.html", "persons/index.html"):
+    body = html(page)
+    for label in expected_lineages:
+        assert label in body, (page, label)
+    for old_label in ("筑前千手氏（嘉麻・夜須）", "豊前香春千手氏（のち金田定着）"):
+        assert old_label not in body, (page, old_label)
+assert "夜須" not in html("lineages/chikuzen/index.html")
