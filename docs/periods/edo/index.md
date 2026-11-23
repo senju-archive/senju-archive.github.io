@@ -1,6 +1,6 @@
 # 江戸時代から探す
 
-高鍋藩と小城藩などに見られる千手氏を、**系統を区別せず年代順**に並べています。年代の確定していない事項は末尾に分けています。
+小城藩士の名簿、高鍋藩の分限帳、藩校明倫堂に関する記録を通して、江戸時代の千手氏をたどります。
 
 <nav class="period-neighbors" aria-label="前後の時代に移動">
   <a class="period-neighbor" href="../azuchi-momoyama/"><span>← 前の時代</span><strong>安土桃山時代</strong></a>

@@ -1,6 +1,6 @@
 # 戦国時代から探す
 
-所領・主家・諸勢力の変動を、**系統を区別せず年代順**に並べています。年代の確定していない事項は末尾に分けています。
+文明10年（1478年）の千手盛景・正景の知行に関する記録や、筑紫氏家臣の千手姓にまつわる伝承をたどります。
 
 <nav class="period-neighbors" aria-label="前後の時代に移動">
   <a class="period-neighbor" href="../muromachi/"><span>← 前の時代</span><strong>室町時代</strong></a>

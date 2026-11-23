@@ -1,6 +1,6 @@
 # 安土桃山時代から探す
 
-九州平定と秋月氏家臣団の動向を、**系統を区別せず年代順**に並べています。年代の確定していない事項は末尾に分けています。
+天正15年（1587年）の九州平定と秋月氏家臣団の移動について、千手氏に関わる記録や伝承を紹介します。
 
 <nav class="period-neighbors" aria-label="前後の時代に移動">
   <a class="period-neighbor" href="../sengoku/"><span>← 前の時代</span><strong>戦国時代</strong></a>

@@ -1,6 +1,6 @@
 # 鎌倉時代から探す
 
-初期系譜と鎌倉末期の在地活動を、**系統を区別せず年代順**に並べています。年代の確定していない事項は末尾に分けています。
+秋月荘の拝領をめぐる由緒と、元亨3年（1323年）の「千手兵衛入道」に関する書状の記録を紹介します。
 
 <nav class="period-neighbors" aria-label="前後の時代に移動">
   <a class="period-neighbor" href="../heian/"><span>← 前の時代</span><strong>平安時代</strong></a>

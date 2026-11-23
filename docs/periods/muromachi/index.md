@@ -1,6 +1,6 @@
 # 室町時代から探す
 
-豊前の香春岳城にまつわる記録と伝承を、**系統を区別せず年代順**に並べています。年代の確定していない事項は末尾に分けています。
+千手信濃守興房の香春岳城入城や、応永6年（1399年）の落城と西金田への移住をめぐる伝承を紹介します。
 
 <nav class="period-neighbors" aria-label="前後の時代に移動">
   <a class="period-neighbor" href="../nanbokucho/"><span>← 前の時代</span><strong>南北朝時代</strong></a>
